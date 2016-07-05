@@ -1,0 +1,3 @@
+[submodule "cloud-examples"]
+	path = cloud-examples
+	url = git@github.com:sagemath/cloud-examples.git
