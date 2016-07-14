@@ -1,3 +1,6 @@
 [submodule "cloud-examples"]
 	path = cloud-examples
 	url = git@github.com:sagemath/cloud-examples.git
+[submodule "Bayesian-Modelling-in-Python"]
+	path = Bayesian-Modelling-in-Python
+	url = https://github.com/markdregan/Bayesian-Modelling-in-Python.git

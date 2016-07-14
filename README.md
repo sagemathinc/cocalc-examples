@@ -6,6 +6,17 @@ This mainly adds a categorization and meta-description layer on top of this and 
 
 Nothing done yet, probably a simple `make` will call a script.
 
+## Datamodel
+
+* Goal: JSON for the SMC UI, such that user can select templates -- no need to think about the specific representation, only the elements that are the actually moving parts for such a selector.
+
+* Parts
+  * Filename/Directoryname
+  * Title
+  * Description
+  * Tags for categorization
+  * Centralized description of tags (?)
+
 ## Devnotes
 
 If you forgot to `git clone --recursive`:
