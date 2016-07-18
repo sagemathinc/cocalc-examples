@@ -4,3 +4,6 @@
 [submodule "Bayesian-Modelling-in-Python"]
 	path = Bayesian-Modelling-in-Python
 	url = https://github.com/markdregan/Bayesian-Modelling-in-Python.git
+[submodule "scikit-image-tutorials"]
+	path = scikit-image-tutorials
+	url = https://github.com/scikit-image/skimage-tutorials.git
