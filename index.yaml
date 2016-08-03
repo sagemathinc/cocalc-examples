@@ -1,0 +1,19 @@
+---
+tags:
+    calc: Calculus
+    linalg: Linear Algebra
+    stats: Statistics
+licenses:
+    ccby: CC BY 4.0
+    asis: AS IS
+references:
+- cloud-examples/index.yaml
+---
+target: bayesian-methods-for-hackers/
+title: Bayesian Methods for Hackers
+description: |
+    Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
+author:  Cameron Davidson-Pilon
+license: asis
+tags:
+- stats
