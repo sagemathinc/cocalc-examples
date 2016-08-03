@@ -10,3 +10,6 @@
 [submodule "bayesian-methods-for-hackers"]
 	path = bayesian-methods-for-hackers
 	url = https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers.git
+[submodule "dask-tutorial"]
+	path = dask-tutorial
+	url = https://github.com/dask/dask-tutorial.git
