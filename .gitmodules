@@ -13,3 +13,15 @@
 [submodule "dask-tutorial"]
 	path = dask-tutorial
 	url = https://github.com/dask/dask-tutorial.git
+[submodule "latex-template-collection"]
+	path = cmichi-latex-templates
+	url = https://github.com/cmichi/latex-template-collection
+[submodule "deedy-latex-templates"]
+	path = deedy-latex-templates
+	url = https://github.com/deedy/Latex-Templates
+[submodule "martinthoma-latex-examples"]
+	path = martinthoma-latex-examples
+	url = https://github.com/MartinThoma/LaTeX-examples
+[submodule "Schymanski_leaf-scale_2016"]
+	path = Schymanski_leaf-scale_2016
+	url = https://github.com/schymans/Schymanski_leaf-scale_2016.git

@@ -6,6 +6,9 @@ tags:
 licenses:
     ccby: CC BY 4.0
     asis: AS IS
+    mit: MIT
+    cc0: CC0 1.0 Universal
+    gpl3: GPLv3
 references:
 - cloud-examples/index.yaml
 ---
@@ -17,3 +20,18 @@ author:  Cameron Davidson-Pilon
 license: asis
 tags:
 - stats
+---
+target: cmichi-latex-templates
+license: mit
+---
+target: deedy-latex-templates
+license: cc0
+---
+target: martinthoma-latex-examples
+license: None
+---
+target: Schymanski_leaf-scale_2016
+license: gpl3
+description: |
+  Supporting information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
+
