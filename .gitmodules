@@ -1,6 +1,3 @@
-[submodule "cloud-examples"]
-	path = cloud-examples
-	url = git@github.com:sagemath/cloud-examples.git
 [submodule "Bayesian-Modelling-in-Python"]
 	path = Bayesian-Modelling-in-Python
 	url = https://github.com/markdregan/Bayesian-Modelling-in-Python.git
@@ -25,3 +22,9 @@
 [submodule "Schymanski_leaf-scale_2016"]
 	path = Schymanski_leaf-scale_2016
 	url = https://github.com/schymans/Schymanski_leaf-scale_2016.git
+[submodule "beezer-linear-algebra"]
+	path = beezer-linear-algebra
+	url = https://github.com/rbeezer/sla.git
+[submodule "cloud-examples"]
+	path = cloud-examples
+	url = https://github.com/sagemath/cloud-examples.git
