@@ -6,6 +6,7 @@ tags:
     intro: Introduction
 licenses:
     ccby: CC BY 4.0
+    ccbysa: CC BY-SA
     asis: AS IS
     mit: MIT
     cc0: CC0 1.0 Universal
@@ -38,17 +39,17 @@ license: mit
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
 license: cc0
----
-src: martinthoma-latex-examples/
-license: None
-title: "More than 570 LaTeX examples"
-description: "More than 570 examples for the usage of LaTeX -- https://github.com/MartinThoma/LaTeX-examples/"
+#---
+#src: martinthoma-latex-examples/
+#license: None
+#title: "More than 570 LaTeX examples"
+#description: "More than 570 examples for the usage of LaTeX -- https://github.com/MartinThoma/LaTeX-examples/"
 ---
 src: Schymanski_leaf-scale_2016/
 license: gpl3
 title: "Leaf-scale experiments reveal an important omission in the Penman–Monteith equation"
 description: |
-  Supporting information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
+  Support information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
 ---
 src : data-science-ipython-notebooks/
 title: "Data science Python notebooks"
@@ -56,3 +57,9 @@ license: a20
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
+---
+src : beezer-linear-algebra/
+title: "Sage and Linear Algebra"
+description: "This is a collection of classroom-tested worksheets to accompany Beezer's [First Course in Linear Algebra](http://linear.pugetsound.edu/)."
+author: "Robert A. Beezer"
+license: ccbysa
