@@ -10,7 +10,6 @@ import itertools as it
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
-ID = it.count(0)
 
 # TODO this is silly code, fix it
 
@@ -23,6 +22,8 @@ def update_meta(meta, new_meta):
     if 'licenses' in new_meta:
         meta['licenses'].update(new_meta['licenses'])
 
+# TODO this is just for a unique id for each document. maybe make it stable?
+ID = it.count(0)
 def init_doc(docs, prefix):
     for doc in docs:
         doc['src'] = os.path.join(prefix, doc['src'])

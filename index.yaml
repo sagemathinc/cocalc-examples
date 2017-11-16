@@ -14,7 +14,7 @@ licenses:
 references:
 - cocalc-example-files/index.yaml
 ---
-title: First Steps on CoCalc
+title: First Steps in CoCalc
 src: first-steps/
 license: a20
 tags:
@@ -22,7 +22,7 @@ tags:
 descriptions: |
   Quick introduction to CoCalc interface and basic functionalities.
 ---
-title: Bayesian Methods for Hackers
+title: "Bayesian Methods for Hackers"
 src: bayesian-methods-for-hackers/
 description: |
     Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
@@ -32,21 +32,26 @@ tags:
 - stats
 ---
 src: cmichi-latex-templates/
+title: "Michael Müller's LaTeX Templates"
 license: mit
 ---
 src: deedy-latex-templates/
+title: "Deedy LaTeX Templates"
 license: cc0
 ---
 src: martinthoma-latex-examples/
 license: None
+title: "More than 570 LaTeX examples"
 description: "More than 570 examples for the usage of LaTeX -- https://github.com/MartinThoma/LaTeX-examples/"
 ---
 src: Schymanski_leaf-scale_2016/
 license: gpl3
+title: "Leaf-scale experiments reveal an important omission in the Penman–Monteith equation"
 description: |
   Supporting information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
 ---
 src : data-science-ipython-notebooks/
+title: "Data science Python notebooks"
 license: a20
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
