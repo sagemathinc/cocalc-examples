@@ -31,3 +31,6 @@
 [submodule "cocalc-example-files"]
 	path = cocalc-example-files
 	url = https://github.com/sagemathinc/cocalc-example-files.git
+[submodule "data-science-ipython-notebooks"]
+	path = data-science-ipython-notebooks
+	url = https://github.com/donnemartin/data-science-ipython-notebooks.git

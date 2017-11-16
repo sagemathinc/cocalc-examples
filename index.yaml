@@ -9,8 +9,9 @@ licenses:
     mit: MIT
     cc0: CC0 1.0 Universal
     gpl3: GPLv3
+    a20: Apache 2.0
 references:
-- cloud-examples/index.yaml
+- cocalc-example-files/index.yaml
 ---
 target: bayesian-methods-for-hackers/
 title: Bayesian Methods for Hackers
@@ -34,4 +35,9 @@ target: Schymanski_leaf-scale_2016
 license: gpl3
 description: |
   Supporting information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
-
+---
+src : data-science-ipython-notebooks
+license: a20
+description: |
+  Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle, 
+  big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
