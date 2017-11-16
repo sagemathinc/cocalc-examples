@@ -5,7 +5,14 @@ from pprint import pprint
 import yaml
 import json
 import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+import itertools as it
+# to make all "src" absolute paths!
+ROOT = os.path.dirname(os.path.abspath(__file__))
+os.chdir(ROOT)
+
+ID = it.count(0)
+
+# TODO this is silly code, fix it
 
 def update_meta(meta, new_meta):
     '''
@@ -16,12 +23,22 @@ def update_meta(meta, new_meta):
     if 'licenses' in new_meta:
         meta['licenses'].update(new_meta['licenses'])
 
-def resolve_references(meta, docs):
+def init_doc(docs, prefix):
+    for doc in docs:
+        doc['src'] = os.path.join(prefix, doc['src'])
+        assert 'id' not in doc
+        doc['id'] = 'doc-{}'.format(next(ID))
+
+# prefix is the path to prefix
+def resolve_references(meta, docs, prefix=''):
     # append new documents and merge meta
     if 'references' in meta:
         for ref in meta['references']:
+            prefix = os.path.join(prefix, os.path.dirname(ref))
+            print("resolve_references prefix={}".format(prefix))
             new_meta, *new_docs = yaml.load_all(open(ref))
-            resolve_references(new_meta, new_docs)
+            init_doc(new_docs, prefix)
+            resolve_references(new_meta, new_docs, prefix=prefix)
             update_meta(meta, new_meta)
             docs.extend(new_docs)
         del meta['references']
@@ -40,7 +57,8 @@ def export_json(meta, docs):
 
 def main(index_fn):
     meta, *docs = yaml.load_all(open(index_fn))
-    resolve_references(meta, docs)
+    init_doc(docs, ROOT)
+    resolve_references(meta, docs, prefix=ROOT)
     debug(meta, docs)
     export_json(meta, docs)
 

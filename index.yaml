@@ -3,6 +3,7 @@ tags:
     calc: Calculus
     linalg: Linear Algebra
     stats: Statistics
+    intro: Introduction
 licenses:
     ccby: CC BY 4.0
     asis: AS IS
@@ -13,8 +14,16 @@ licenses:
 references:
 - cocalc-example-files/index.yaml
 ---
-target: bayesian-methods-for-hackers/
+title: First Steps on CoCalc
+src: first-steps/
+license: a20
+tags:
+- intro
+descriptions: |
+  Quick introduction to CoCalc interface and basic functionalities.
+---
 title: Bayesian Methods for Hackers
+src: bayesian-methods-for-hackers/
 description: |
     Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
 author:  Cameron Davidson-Pilon
@@ -22,22 +31,23 @@ license: asis
 tags:
 - stats
 ---
-target: cmichi-latex-templates
+src: cmichi-latex-templates/
 license: mit
 ---
-target: deedy-latex-templates
+src: deedy-latex-templates/
 license: cc0
 ---
-target: martinthoma-latex-examples
+src: martinthoma-latex-examples/
 license: None
+description: "More than 570 examples for the usage of LaTeX -- https://github.com/MartinThoma/LaTeX-examples/"
 ---
-target: Schymanski_leaf-scale_2016
+src: Schymanski_leaf-scale_2016/
 license: gpl3
 description: |
   Supporting information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
 ---
-src : data-science-ipython-notebooks
+src : data-science-ipython-notebooks/
 license: a20
 description: |
-  Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle, 
+  Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.

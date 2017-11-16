@@ -17,11 +17,12 @@ Call `./index.py` or just do a simple `make` to call that script.
       * description of license
       * references: point to another index description file
   * remaining documents are for each indexed entry:
-      * Target: Filename/Directory
-      * Title
-      * Description
-      * Tags for categorization
-      * license
+      * `src`: Filename/Directory
+      * `title`
+      * `description`
+      * `tags`: for categorization
+      * `license`
+      * `start`: entry point file
 
 ## Devnotes
 
@@ -32,6 +33,10 @@ If you forgot to `git clone --recursive`:
 If you want to update all submodules in one go, do something like
 
     git submodule foreach "git checkout master; git pull origin master"
+
+or with resets
+
+    git submodule foreach "git fetch origin; git checkout master; git reset --hard origin/master"
 
 ## License
 
