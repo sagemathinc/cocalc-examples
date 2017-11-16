@@ -16,7 +16,8 @@ references:
 - cocalc-example-files/index.yaml
 ---
 title: First Steps in CoCalc
-src: first-steps/
+src: first-steps/src/
+subdir: first-steps
 license: a20
 tags:
 - intro
