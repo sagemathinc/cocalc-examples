@@ -25,6 +25,7 @@ tags:
 descriptions: |
   Quick introduction to CoCalc interface and basic functionalities.
 ---
+id: 'bayes-for-hackers'
 title: "Bayesian Methods for Hackers"
 src: bayesian-methods-for-hackers/
 thumbnail: thumbs/bayesian.png

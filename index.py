@@ -24,11 +24,20 @@ def update_meta(meta, new_meta):
 
 # TODO this is just for a unique id for each document. maybe make it stable?
 ID = it.count(0)
+all_ids = set()
 def init_doc(docs, prefix):
     for doc in docs:
         doc['src'] = os.path.join(prefix, doc['src'])
-        assert 'id' not in doc
-        doc['id'] = 'doc-{}'.format(next(ID))
+        if 'thumbnail' in doc:
+            doc['thumbnail'] = os.path.join(prefix, doc['thumbnail'])
+        if 'id' in doc:
+            assert doc['id'] not in all_ids
+            all_ids.add(doc['id'])
+        else:
+            newid = 'doc-{}'.format(next(ID))
+            assert newid not in all_ids
+            all_ids.add(newid)
+            doc['id'] = newid
 
 # prefix is the path to prefix
 def resolve_references(meta, docs, prefix=''):
