@@ -19,6 +19,7 @@ title: First Steps in CoCalc
 src: first-steps/src/
 subdir: first-steps
 license: a20
+thumbnail: thumbs/firststeps.png
 tags:
 - intro
 descriptions: |
@@ -26,6 +27,7 @@ descriptions: |
 ---
 title: "Bayesian Methods for Hackers"
 src: bayesian-methods-for-hackers/
+thumbnail: thumbs/bayesian.png
 description: |
     Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
 author:  Cameron Davidson-Pilon
@@ -35,10 +37,12 @@ tags:
 ---
 src: cmichi-latex-templates/
 title: "Michael Müller's LaTeX Templates"
+thumbnail: thumbs/muller-latex.png
 license: mit
 ---
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
+thumbnail: thumbs/deedy-latex.png
 license: cc0
 #---
 #src: martinthoma-latex-examples/
@@ -54,6 +58,7 @@ description: |
 ---
 src : data-science-ipython-notebooks/
 title: "Data science Python notebooks"
+thumbnail: thumbs/datasciipython.png
 license: a20
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
@@ -64,3 +69,4 @@ title: "Sage and Linear Algebra"
 description: "This is a collection of classroom-tested worksheets to accompany Beezer's [First Course in Linear Algebra](http://linear.pugetsound.edu/)."
 author: "Robert A. Beezer"
 license: ccbysa
+thumbnail: thumbs/sage-lin-alg.png
