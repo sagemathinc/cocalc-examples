@@ -1,17 +1,30 @@
 ---
+# an entry can have a list of tags
 tags:
-    calc: Calculus
-    linalg: Linear Algebra
-    stats: Statistics
-    intro: Introduction
+  calc: Calculus
+  linalg: Linear Algebra
+  stats: Statistics
+  intro: Introduction
+# an entry can have exactly one license
 licenses:
-    ccby: CC BY 4.0
-    ccbysa: CC BY-SA
-    asis: AS IS
-    mit: MIT
-    cc0: CC0 1.0 Universal
-    gpl3: GPLv3
-    a20: Apache 2.0
+  ccby: CC BY 4.0
+  ccbysa: CC BY-SA
+  asis: AS IS
+  mit: MIT
+  cc0: CC0 1.0 Universal
+  gpl3: GPLv3
+  a20: Apache 2.0
+# each entry must have exactly one category
+categories:
+  intro: Introduction
+  stats: Statistics
+  cs: Computer science
+  datascience: Data science
+  math: Mathematics
+  physics: Physics
+  chemistry: Chemistry
+  latex: LaTeX templates
+  misc: Miscellaneous
 references:
 - cocalc-example-files/index.yaml
 ---
@@ -20,6 +33,7 @@ src: first-steps/src/
 subdir: first-steps
 license: a20
 thumbnail: thumbs/firststeps.png
+category: intro
 tags:
 - intro
 descriptions: |
@@ -33,18 +47,21 @@ description: |
     Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
 author:  Cameron Davidson-Pilon
 license: asis
+category: stats
 tags:
 - stats
 ---
 src: cmichi-latex-templates/
 title: "Michael Müller's LaTeX Templates"
 thumbnail: thumbs/muller-latex.png
+category: latex
 license: mit
 ---
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
 thumbnail: thumbs/deedy-latex.png
 license: cc0
+category: latex
 #---
 #src: martinthoma-latex-examples/
 #license: None
@@ -53,6 +70,7 @@ license: cc0
 ---
 src: Schymanski_leaf-scale_2016/
 license: gpl3
+category: misc
 title: "Leaf-scale experiments reveal an important omission in the Penman–Monteith equation"
 description: |
   Support information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
@@ -60,12 +78,14 @@ description: |
 src : data-science-ipython-notebooks/
 title: "Data science Python notebooks"
 thumbnail: thumbs/datasciipython.png
+category: datascience
 license: a20
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
 ---
 src : beezer-linear-algebra/
+category: math
 title: "Sage and Linear Algebra"
 description: "This is a collection of classroom-tested worksheets to accompany Beezer's [First Course in Linear Algebra](http://linear.pugetsound.edu/)."
 author: "Robert A. Beezer"

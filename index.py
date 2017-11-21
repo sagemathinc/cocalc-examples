@@ -11,7 +11,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
 
-# TODO this is silly code, fix it
+# TODO this is silly code, please fix it ...
 
 def update_meta(meta, new_meta):
     '''
@@ -21,6 +21,11 @@ def update_meta(meta, new_meta):
         meta['tags'].update(new_meta['tags'])
     if 'licenses' in new_meta:
         meta['licenses'].update(new_meta['licenses'])
+    if 'categories' in new_meta:
+        # if you introduce a new category, it must be unique
+        assert all(nm not in meta['categories'].keys() for nm in new_meta['categories'].keys())
+        meta['categories'].update(new_meta['categories'])
+
 
 # TODO this is just for a unique id for each document. maybe make it stable?
 ID = it.count(0)
@@ -54,6 +59,12 @@ def resolve_references(meta, docs, prefix=''):
         del meta['references']
     return meta, docs
 
+def consistency_checks(meta, docs):
+    cats = meta['categories']
+    for doc in docs:
+        assert 'category' in doc, "doc {} misses category".format(doc['title'])
+        assert doc['category'] in cats
+
 def debug(meta, docs):
     print("META:")
     pprint(meta)
@@ -71,6 +82,7 @@ def main(index_fn):
     resolve_references(meta, docs, prefix=ROOT)
     debug(meta, docs)
     export_json(meta, docs)
+    consistency_checks(meta, docs)
 
 if __name__ == '__main__':
     main(index_fn = 'index.yaml')
