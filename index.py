@@ -62,6 +62,7 @@ def resolve_references(meta, docs, prefix=''):
 def consistency_checks(meta, docs):
     cats = meta['categories']
     for doc in docs:
+        assert 'title' in doc, "doc {} misses a title".format(doc.id)
         assert 'category' in doc, "doc {} misses category".format(doc['title'])
         assert doc['category'] in cats
 

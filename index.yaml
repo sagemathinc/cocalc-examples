@@ -56,12 +56,20 @@ title: "Michael Müller's LaTeX Templates"
 thumbnail: thumbs/muller-latex.png
 category: latex
 license: mit
+description: |
+  Collection of different LaTeX/XeTeX templates (cv, invoices, timesheets, letters, etc.).
+
+  Website: https://github.com/cmichi/latex-template-collection'
 ---
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
 thumbnail: thumbs/deedy-latex.png
 license: cc0
 category: latex
+description:  |
+  A concise set of Latex templates that serves a small set of needs - CV, Essays, Articles and Problem Sets.
+
+  Website: https://github.com/deedy/Latex-Templates
 #---
 #src: martinthoma-latex-examples/
 #license: None
