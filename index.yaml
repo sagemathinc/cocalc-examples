@@ -36,7 +36,7 @@ thumbnail: thumbs/firststeps.png
 category: intro
 tags:
 - intro
-descriptions: |
+description: |
   Quick introduction to CoCalc interface and basic functionalities.
 ---
 id: 'bayes-for-hackers'
@@ -58,8 +58,7 @@ category: latex
 license: mit
 description: |
   Collection of different LaTeX/XeTeX templates (cv, invoices, timesheets, letters, etc.).
-
-  Website: https://github.com/cmichi/latex-template-collection'
+website: https://github.com/cmichi/latex-template-collection'
 ---
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
@@ -68,8 +67,7 @@ license: cc0
 category: latex
 description:  |
   A concise set of Latex templates that serves a small set of needs - CV, Essays, Articles and Problem Sets.
-
-  Website: https://github.com/deedy/Latex-Templates
+website: https://github.com/deedy/Latex-Templates
 #---
 #src: martinthoma-latex-examples/
 #license: None
@@ -96,6 +94,7 @@ src : beezer-linear-algebra/
 category: math
 title: "Sage and Linear Algebra"
 description: "This is a collection of classroom-tested worksheets to accompany Beezer's [First Course in Linear Algebra](http://linear.pugetsound.edu/)."
+website: http://linear.pugetsound.edu/
 author: "Robert A. Beezer"
 license: ccbysa
 thumbnail: thumbs/sage-lin-alg.png
