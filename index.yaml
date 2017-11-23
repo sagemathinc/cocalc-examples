@@ -114,7 +114,8 @@ description: 'Notebooks and code for the book "Introduction to Machine Learning 
 website: https://github.com/amueller/introduction_to_ml_with_python
 thumbnail: thumbs/intro-to-ml.jpg
 category: datascience
-tags: python
+tags:
+- python
 ---
 id: sci-comp-python
 src: scientific-python-lectures/
@@ -123,5 +124,6 @@ author: Robert Johansson
 website: https://github.com/jrjohansson/scientific-python-lectures
 thumbnail: thumbs/sci-computing-python.png
 category: datascience
-tags: python
+tags:
+- python
 license: ccby
