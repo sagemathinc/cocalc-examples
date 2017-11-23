@@ -5,6 +5,7 @@ tags:
   linalg: Linear Algebra
   stats: Statistics
   intro: Introduction
+  python: Python
 # an entry can have exactly one license
 licenses:
   ccby: CC BY 4.0
@@ -28,6 +29,7 @@ categories:
 references:
 - cocalc-example-files/index.yaml
 ---
+id: cocalc-first-steps
 title: First Steps in CoCalc
 src: first-steps/src/
 subdir: first-steps
@@ -51,6 +53,7 @@ category: stats
 tags:
 - stats
 ---
+id: cmichi-latex-templates
 src: cmichi-latex-templates/
 title: "Michael Müller's LaTeX Templates"
 thumbnail: thumbs/muller-latex.png
@@ -60,6 +63,7 @@ description: |
   Collection of different LaTeX/XeTeX templates (cv, invoices, timesheets, letters, etc.).
 website: https://github.com/cmichi/latex-template-collection'
 ---
+id: deedy-latex-templates
 src: deedy-latex-templates/
 title: "Deedy LaTeX Templates"
 thumbnail: thumbs/deedy-latex.png
@@ -74,6 +78,7 @@ website: https://github.com/deedy/Latex-Templates
 #title: "More than 570 LaTeX examples"
 #description: "More than 570 examples for the usage of LaTeX -- https://github.com/MartinThoma/LaTeX-examples/"
 ---
+id: schymanski-leaf-scale
 src: Schymanski_leaf-scale_2016/
 license: gpl3
 category: misc
@@ -81,6 +86,7 @@ title: "Leaf-scale experiments reveal an important omission in the Penman–Mont
 description: |
   Support information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
 ---
+id: datasci-notebooks
 src : data-science-ipython-notebooks/
 title: "Data science Python notebooks"
 thumbnail: thumbs/datasciipython.png
@@ -90,6 +96,7 @@ description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
 ---
+id: beezer-linear-algebra
 src : beezer-linear-algebra/
 category: math
 title: "Sage and Linear Algebra"
@@ -98,3 +105,23 @@ website: http://linear.pugetsound.edu/
 author: "Robert A. Beezer"
 license: ccbysa
 thumbnail: thumbs/sage-lin-alg.png
+---
+id: ml-with-python
+src: introduction_to_ml_with_python/
+title: "Introduction to Machine Learning with Python"
+author: "Andreas Mueller and Sarah Guido"
+description: 'Notebooks and code for the book "Introduction to Machine Learning with Python"'
+website: https://github.com/amueller/introduction_to_ml_with_python
+thumbnail: thumbs/intro-to-ml.jpg
+category: datascience
+tags: python
+---
+id: sci-comp-python
+src: scientific-python-lectures/
+title: Lectures on scientific computing with Python
+author: Robert Johansson
+website: https://github.com/jrjohansson/scientific-python-lectures
+thumbnail: thumbs/sci-computing-python.png
+category: datascience
+tags: python
+license: ccby

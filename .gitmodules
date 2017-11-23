@@ -34,3 +34,9 @@
 [submodule "data-science-ipython-notebooks"]
 	path = data-science-ipython-notebooks
 	url = https://github.com/donnemartin/data-science-ipython-notebooks.git
+[submodule "introduction_to_ml_with_python"]
+	path = introduction_to_ml_with_python
+	url = https://github.com/amueller/introduction_to_ml_with_python.git
+[submodule "scientific-python-lectures"]
+	path = scientific-python-lectures
+	url = https://github.com/jrjohansson/scientific-python-lectures.git
