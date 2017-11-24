@@ -26,6 +26,10 @@ categories:
   chemistry: Chemistry
   latex: LaTeX templates
   misc: Miscellaneous
+# additional weighting for sorting by category – default 0
+category_sortweight:
+  intro: -1
+  misc: 1
 references:
 - cocalc-example-files/index.yaml
 ---
