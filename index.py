@@ -61,15 +61,19 @@ def resolve_references(meta, docs, prefix=''):
 
 def consistency_checks(meta, docs):
     cats = meta['categories']
+    tags = meta['tags']
     allowed_keys = ['id', 'src', 'title', 'description', 'website', 'author', 'license', 'category', 'tags', 'thumbnail', 'subdir']
     for doc in docs:
         assert all(k in allowed_keys for k in doc.keys()), "keys: {}".format(list(doc.keys()))
         assert 'title' in doc, "doc {} misses a title".format(doc.id)
         assert 'category' in doc, "doc {} misses category".format(doc['title'])
         assert doc['category'] in cats
+        if 'tags' in doc:
+            for t in doc['tags']:
+                assert t in tags, 'Tag {} of document {} not in meta.tags'.format(t, doc['id'])
     for k, v in cats.items():
         assert 'name' in v
-    for k, v in meta['tags'].items():
+    for k, v in tags.items():
         assert 'name' in v
 
 def debug(meta, docs):

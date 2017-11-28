@@ -12,6 +12,8 @@ tags:
   python:
     name: Python
     info: 'Make sure to pick a suitable Python environment (Python 2, Python 3, Anaconda, ...)'
+  math:
+    name: Mathematics
 # an entry can have exactly one license
 licenses:
   ccby: CC BY 4.0
