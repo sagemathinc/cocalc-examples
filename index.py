@@ -67,6 +67,10 @@ def consistency_checks(meta, docs):
         assert 'title' in doc, "doc {} misses a title".format(doc.id)
         assert 'category' in doc, "doc {} misses category".format(doc['title'])
         assert doc['category'] in cats
+    for k, v in cats.items():
+        assert 'name' in v
+    for k, v in meta['tags'].items():
+        assert 'name' in v
 
 def debug(meta, docs):
     print("META:")
