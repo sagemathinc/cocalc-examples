@@ -1,11 +1,17 @@
 ---
 # an entry can have a list of tags
 tags:
-  calc: Calculus
-  linalg: Linear Algebra
-  stats: Statistics
-  intro: Introduction
-  python: Python
+  calc:
+    name: Calculus
+  linalg:
+    name: Linear Algebra
+  stats:
+    name: Statistics
+  intro:
+    name: Introduction
+  python:
+    name: Python
+    info: 'Make sure to pick a suitable Python environment (Python 2, Python 3, Anaconda, ...)'
 # an entry can have exactly one license
 licenses:
   ccby: CC BY 4.0
@@ -16,20 +22,28 @@ licenses:
   gpl3: GPLv3
   a20: Apache 2.0
 # each entry must have exactly one category
+# weight: additional weighting for sorting by category – default 0
 categories:
-  intro: Introduction
-  stats: Statistics
-  cs: Computer science
-  datascience: Data science
-  math: Mathematics
-  physics: Physics
-  chemistry: Chemistry
-  latex: LaTeX templates
-  misc: Miscellaneous
-# additional weighting for sorting by category – default 0
-category_sortweight:
-  intro: -1
-  misc: 1
+  intro:
+    name: Introduction
+    weight: -1
+  stats:
+    name: Statistics
+  cs:
+    name: Computer science
+  datascience:
+    name: Data science
+  math:
+    name: Mathematics
+  physics:
+    name: Physics
+  chemistry:
+    name: Chemistry
+  latex:
+    name: LaTeX templates
+  misc:
+    name: Miscellaneous
+    weight: 1
 references:
 - cocalc-example-files/index.yaml
 ---
