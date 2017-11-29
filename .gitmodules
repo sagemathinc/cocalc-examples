@@ -40,3 +40,6 @@
 [submodule "scientific-python-lectures"]
 	path = scientific-python-lectures
 	url = https://github.com/jrjohansson/scientific-python-lectures.git
+[submodule "PythonDataScienceHandbook"]
+	path = PythonDataScienceHandbook
+	url = https://github.com/jakevdp/PythonDataScienceHandbook.git

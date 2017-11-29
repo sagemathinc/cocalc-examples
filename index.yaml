@@ -147,3 +147,13 @@ category: datascience
 tags:
 - python
 license: ccby
+---
+id: python-data-science-handbook
+category: datascience
+src: PythonDataScienceHandbook/
+title: Python Data Science Handbook
+author: Jake Vanderplas
+thumbnail: thumbs/PDSH-cover.png
+tags:
+- python
+license: mit
