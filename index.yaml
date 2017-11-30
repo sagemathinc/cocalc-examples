@@ -157,3 +157,13 @@ thumbnail: thumbs/PDSH-cover.png
 tags:
 - python
 license: mit
+---
+id: stanford-tensorflow-tutorials
+category: datascience
+src: stanford-tensorflow-tutorials/
+title: Stanford Tensorflow Tutorials
+description: >
+  This repository contains code examples for the course **CS 20SI: TensorFlow for Deep Learning Research**.
+website: http://cs20si.stanford.edu
+tags:
+- python

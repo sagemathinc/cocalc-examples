@@ -43,3 +43,6 @@
 [submodule "PythonDataScienceHandbook"]
 	path = PythonDataScienceHandbook
 	url = https://github.com/jakevdp/PythonDataScienceHandbook.git
+[submodule "stanford-tensorflow-tutorials"]
+	path = stanford-tensorflow-tutorials
+	url = https://github.com/chiphuyen/stanford-tensorflow-tutorials.git
