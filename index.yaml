@@ -54,7 +54,7 @@ title: First Steps in CoCalc
 src: first-steps/src/
 subdir: first-steps
 license: a20
-thumbnail: thumbs/firststeps.png
+thumbnail: thumbs/cocalc-first-steps.png
 category: intro
 tags:
 - intro
@@ -109,9 +109,10 @@ description: |
 id: datasci-notebooks
 src : data-science-ipython-notebooks/
 title: "Data science Python notebooks"
-thumbnail: thumbs/datasciipython.png
+thumbnail: thumbs/datascience-tutorials.png
 category: datascience
 license: a20
+website: https://github.com/donnemartin/data-science-ipython-notebooks
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.

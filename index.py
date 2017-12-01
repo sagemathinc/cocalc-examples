@@ -60,10 +60,12 @@ def resolve_references(meta, docs, prefix=''):
     return meta, docs
 
 def consistency_checks(meta, docs):
+    print('done. running consistency checks ...')
     cats = meta['categories']
     tags = meta['tags']
     allowed_keys = ['id', 'src', 'title', 'description', 'website', 'author', 'license', 'category', 'tags', 'thumbnail', 'subdir']
     for doc in docs:
+        print('checking {0[id]}: {0[title]}'.format(doc))
         assert all(k in allowed_keys for k in doc.keys()), "keys: {}".format(list(doc.keys()))
         assert 'title' in doc, "doc {} misses a title".format(doc.id)
         assert 'category' in doc, "doc {} misses category".format(doc['title'])
@@ -71,6 +73,8 @@ def consistency_checks(meta, docs):
         if 'tags' in doc:
             for t in doc['tags']:
                 assert t in tags, 'Tag {} of document {} not in meta.tags'.format(t, doc['id'])
+        if 'thumbnail' in doc:
+            assert os.path.exists(doc['thumbnail']), 'Thumbnail {0[thumbnail]} for {0[id]} does not exist'.format(doc)
     for k, v in cats.items():
         assert 'name' in v
     for k, v in tags.items():
@@ -91,9 +95,10 @@ def main(index_fn):
     meta, *docs = yaml.load_all(open(index_fn))
     init_doc(docs, ROOT)
     resolve_references(meta, docs, prefix=ROOT)
-    debug(meta, docs)
-    export_json(meta, docs)
+    #debug(meta, docs)
     consistency_checks(meta, docs)
+    export_json(meta, docs)
+    print('all done.')
 
 if __name__ == '__main__':
     main(index_fn = 'index.yaml')
