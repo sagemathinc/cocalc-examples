@@ -69,6 +69,8 @@ def consistency_checks(meta, docs):
         assert all(k in allowed_keys for k in doc.keys()), "keys: {}".format(list(doc.keys()))
         assert 'title' in doc, "doc {} misses a title".format(doc.id)
         assert 'category' in doc, "doc {} misses category".format(doc['title'])
+        assert 'src' in doc, "doc {} misses src".format(doc['title'])
+        assert doc['src'].endswith('/'), 'doc "{}" src must end with a slash to signal it is a directory. single files will be supported later ...'.format(doc['title'])
         assert doc['category'] in cats
         if 'tags' in doc:
             for t in doc['tags']:

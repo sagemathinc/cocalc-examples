@@ -1,3 +1,5 @@
+# This defines what the user sees in the library dialog -- smc-webapp/library.cjsx
+# see index.py for more details.
 ---
 # an entry can have a list of tags
 tags:
@@ -72,6 +74,7 @@ license: asis
 category: stats
 tags:
 - stats
+- python
 ---
 id: cmichi-latex-templates
 src: cmichi-latex-templates/
@@ -112,6 +115,8 @@ title: "Data science Python notebooks"
 thumbnail: thumbs/datascience-tutorials.png
 category: datascience
 license: a20
+tags:
+- python
 website: https://github.com/donnemartin/data-science-ipython-notebooks
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
