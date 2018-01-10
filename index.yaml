@@ -16,6 +16,9 @@ tags:
     info: 'Make sure to pick a suitable Python environment (Python 2, Python 3, Anaconda, ...)'
   math:
     name: Mathematics
+  julia:
+    name: Julia
+    info: 'Be patient. Starting Julia the first time might require to recompile some modules.'
 # an entry can have exactly one license
 licenses:
   ccby: CC BY 4.0
