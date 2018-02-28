@@ -182,10 +182,10 @@ category: math
 src: tresham-calculus-worksheets/
 title: Aaron Tresham Calculus Materials
 author: Aaron Tresham
-description: >
+description: |
   A collection of classroom-tested worksheets to accompany Tresham's [Math 205](http://www2.hawaii.edu/~tresham/Math205%20Lab/math205lab.html) and [Math 206](http://www2.hawaii.edu/~tresham/Math206%20Lab/math206lab.html).
-website: >
-  https://cocalc.com/share/f8df5b36830778dde7b3c3c4e68c542bbaeeefba/Aaron%20Tresham%20Calculus%20Material/Calculus%202/15%20-%20Taylor%20Series%20Assignment/?viewer=share
+
+  Files are publicly hosted [here](https://cocalc.com/share/f8df5b36830778dde7b3c3c4e68c542bbaeeefba/Aaron%20Tresham%20Calculus%20Material/Calculus%202/15%20-%20Taylor%20Series%20Assignment/?viewer=share).
 thumbnail: thumbs/tresham-calc.png
 tags:
 - calc
