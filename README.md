@@ -25,7 +25,7 @@ This mainly adds a categorization and meta-description layer on top of this and 
       * `license`
       * `start`: entry point file
 
-**note**: The `index.py` file contains additional verification of the data for validity and consitency. Just follow what the assert-exceptions complain about ...
+**note**: The `index.py` file contains additional verification of the data for validity and consistency. Just follow what the assert-exceptions complain about ...
 
 ## Devnotes
 
