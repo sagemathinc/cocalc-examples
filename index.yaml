@@ -48,6 +48,8 @@ categories:
     name: Chemistry
   latex:
     name: LaTeX templates
+  science:
+    name: Science
   misc:
     name: Miscellaneous
     weight: 1
@@ -205,4 +207,18 @@ description: |
   we ported the codes (originally in R and Stan) in the book to PyMC3.
   We are trying to keep the examples as close as possible to those in the book,
   while at the same time trying to express them in the most Pythonic and PyMC3onic way we can.
+---
+id: think-complexity-2ed
+src: think-complexity-2ed/
+category: science
+license: ccbysa
+title: Think Complexity
+author: Allen B. Downey
+description: |
+  This book is primarily about complexity science, but studying complexity science gives you a chance to explore topics and ideas
+  you might not encounter otherwise, practice programming in Python, and learn about data structures and algorithms.
+tags:
+- python
+thumbnail: thumbs/think_complexity_cover.png
+website: http://greenteapress.com/wp/think-complexity-2e/
 

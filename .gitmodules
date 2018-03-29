@@ -49,3 +49,6 @@
 [submodule "statistical-rethinking-python-PyMC3"]
 	path = statistical-rethinking-python-PyMC3
 	url = https://github.com/aloctavodia/Statistical-Rethinking-with-Python-and-PyMC3.git
+[submodule "think-complexity-2ed"]
+	path = think-complexity-2ed
+	url = https://github.com/AllenDowney/ThinkComplexity2.git
