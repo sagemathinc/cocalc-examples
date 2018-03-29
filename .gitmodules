@@ -70,3 +70,6 @@
 [submodule "think-python-2ed"]
 	path = think-python-2ed
 	url = https://github.com/AllenDowney/ThinkPython2.git
+[submodule "think-OS"]
+	path = think-OS
+	url = https://github.com/AllenDowney/ThinkOS.git
