@@ -52,3 +52,21 @@
 [submodule "think-complexity-2ed"]
 	path = think-complexity-2ed
 	url = https://github.com/AllenDowney/ThinkComplexity2.git
+[submodule "think-dsp"]
+	path = think-dsp
+	url = https://github.com/AllenDowney/ThinkDSP.git
+[submodule "thumbs/think-stats-2ed"]
+	path = thumbs/think-stats-2ed
+	url = https://github.com/AllenDowney/ThinkStats2.git
+[submodule "thumbs/think-bayes"]
+	path = thumbs/think-bayes
+	url = https://github.com/AllenDowney/ThinkBayes.git
+[submodule "think-bayes"]
+	path = think-bayes
+	url = https://github.com/AllenDowney/ThinkBayes.git
+[submodule "think-stats-2ed"]
+	path = think-stats-2ed
+	url = https://github.com/AllenDowney/ThinkStats2.git
+[submodule "think-python-2ed"]
+	path = think-python-2ed
+	url = https://github.com/AllenDowney/ThinkPython2.git
