@@ -191,3 +191,18 @@ tags:
 - calc
 - sage
 license: ccbysa
+---
+id: statistical-rethinking-python-PyMC3
+category: stats
+src: statistical-rethinking-python-PyMC3/
+title: "Statistical Rethinking with Python and PyMC3"
+license: ccby
+description: |
+  Statistical Rethinking by Richard McElreath is an incredible good introductory book to Bayesian Statistics.
+  It follows a *Jaynesian* and practical approach with very good examples and clear explanations.
+
+  In [this repository](https://github.com/aloctavodia/Statistical-Rethinking-with-Python-and-PyMC3)
+  we ported the codes (originally in R and Stan) in the book to PyMC3.
+  We are trying to keep the examples as close as possible to those in the book,
+  while at the same time trying to express them in the most Pythonic and PyMC3onic way we can.
+

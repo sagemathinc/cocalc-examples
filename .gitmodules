@@ -46,3 +46,6 @@
 [submodule "stanford-tensorflow-tutorials"]
 	path = stanford-tensorflow-tutorials
 	url = https://github.com/chiphuyen/stanford-tensorflow-tutorials.git
+[submodule "statistical-rethinking-python-PyMC3"]
+	path = statistical-rethinking-python-PyMC3
+	url = https://github.com/aloctavodia/Statistical-Rethinking-with-Python-and-PyMC3.git
