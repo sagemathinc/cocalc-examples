@@ -224,6 +224,19 @@ description: |
   Its strengths include a wide range of exercises, both computational and theoretical, plus many nontrivial applications.
 license: gfdl
 ---
+id: math157
+src: math157/
+category: math
+tags:
+- sage
+title: "Math 157: Intro to Mathematical Software"
+author: "Kiran S. Kedlaya and William Stein"
+license: ccbysa
+description: |
+  Course materials from *Math 157: Intro to Mathematical Software*, taught by Kiran Kedlaya at UC San Diego during the winter 2018 quarter.
+  These were adapted from a similar course (Math 152) taught by Kedlaya at UCSD during winter 2017,
+  and ultimately from several courses (Math 480) taught by William Stein at University of Washington.
+---
 id: think-complexity-2ed
 src: think-complexity-2ed/
 category: science

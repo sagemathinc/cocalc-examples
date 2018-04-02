@@ -67,3 +67,6 @@
 [submodule "think-OS"]
 	path = think-OS
 	url = https://github.com/AllenDowney/ThinkOS.git
+[submodule "math157"]
+	path = math157
+	url = https://github.com/kedlaya/math157
