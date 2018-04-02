@@ -55,12 +55,6 @@
 [submodule "think-dsp"]
 	path = think-dsp
 	url = https://github.com/AllenDowney/ThinkDSP.git
-[submodule "thumbs/think-stats-2ed"]
-	path = thumbs/think-stats-2ed
-	url = https://github.com/AllenDowney/ThinkStats2.git
-[submodule "thumbs/think-bayes"]
-	path = thumbs/think-bayes
-	url = https://github.com/AllenDowney/ThinkBayes.git
 [submodule "think-bayes"]
 	path = think-bayes
 	url = https://github.com/AllenDowney/ThinkBayes.git

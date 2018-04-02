@@ -209,6 +209,19 @@ description: |
   We are trying to keep the examples as close as possible to those in the book,
   while at the same time trying to express them in the most Pythonic and PyMC3onic way we can.
 ---
+id: aata
+src: aata/
+category: math
+title: "Abstract Algebra: Theory and Applications"
+author: "Tom Judson"
+website: "http://abstract.pugetsound.edu/"
+thumbnail: thumbs/aata.jpg
+tags:
+- sage
+description: |
+  This open source textbook designed to teach the principles and theory of abstract algebra to college juniors and seniors in a rigorous manner.
+  Its strengths include a wide range of exercises, both computational and theoretical, plus many nontrivial applications.
+---
 id: think-complexity-2ed
 src: think-complexity-2ed/
 category: science
