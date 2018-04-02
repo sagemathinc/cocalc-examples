@@ -29,6 +29,7 @@ licenses:
   cc0: CC0 1.0 Universal
   gpl3: GPLv3
   a20: Apache 2.0
+  gfdl: GNU Free Documentation License
 # each entry must have exactly one category
 # weight: additional weighting for sorting by category – default 0
 categories:
@@ -221,6 +222,7 @@ tags:
 description: |
   This open source textbook designed to teach the principles and theory of abstract algebra to college juniors and seniors in a rigorous manner.
   Its strengths include a wide range of exercises, both computational and theoretical, plus many nontrivial applications.
+license: gfdl
 ---
 id: think-complexity-2ed
 src: think-complexity-2ed/
