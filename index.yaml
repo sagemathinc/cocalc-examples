@@ -231,6 +231,7 @@ tags:
 - sage
 title: "Math 157: Intro to Mathematical Software"
 author: "Kiran S. Kedlaya and William Stein"
+thumbnail: thumbs/math157.png
 license: ccbysa
 description: |
   Course materials from *Math 157: Intro to Mathematical Software*, taught by Kiran Kedlaya at UC San Diego during the winter 2018 quarter.
