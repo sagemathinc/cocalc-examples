@@ -239,13 +239,15 @@ description: |
   and ultimately from several courses (Math 480) taught by William Stein at University of Washington.
 ---
 id: think-complexity-2ed
-src: think-complexity-2ed/
+src: think-complexity-2ed/code/
+subdir: think-complexity-code
 category: science
-license: ccbync3
+license: mit
 title: Think Complexity
 author: Allen B. Downey
 description: |
-  This book is primarily about complexity science, but studying complexity science gives you a chance to explore topics and ideas
+  This is the accompanying code for this book.
+  It is primarily about complexity science, but studying complexity science gives you a chance to explore topics and ideas
   you might not encounter otherwise, practice programming in Python, and learn about data structures and algorithms.
 tags:
 - python
