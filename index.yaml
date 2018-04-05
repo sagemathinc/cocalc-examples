@@ -253,69 +253,84 @@ tags:
 - python
 thumbnail: thumbs/think_complexity_cover.png
 website: http://greenteapress.com/wp/think-complexity-2e/
-#---
-#id: think-dsp
-#src: think-dsp/
-#category: physics
-#title: Think DSP
-#description: |
-#  *Think DSP* is an introduction to Digital Signal Processing in Python.
-#author: Allen B. Downey
-#thumbnail: thumbs/think_dsp_cover.jpg
-#website: http://greenteapress.com/wp/think-dsp/
-#tags:
-#- python
-#license: ccbysa
-#---
-#id: think-stats-2ed
-#src: think-stats-2ed/
-#category: stats
-#title: Think Stats
-#author: Allen B. Downey
-#website: http://greenteapress.com/wp/think-stats-2e/
-#thumbnail: thumbs/thinkstats2cover.jpg
-#description: |
-#  *Think Stats* is an introduction to Probability and Statistics for Python programmers.
-#tags:
-#- python
-#license: ccbysa
-#---
-#id: think-bayes
-#src: think-bayes/
-#category: stats
-#title: Think Bayes
-#author: Allen B. Downey
-#website: http://greenteapress.com/wp/think-bayes/
-#description: |
-#  *Think Bayes* is an introduction to Bayesian statistics using computational methods.
-#tags:
-#- python
-#license: ccbysa
-#thumbnail: thumbs/think_bayes_cover_medium.png
-#---
-#id: think-python-2ed
-#src: think-python-2ed/
-#title: Think Python
-#author: Allen B. Downey
-#thumbnail: thumbs/think_python2_medium.jpg
-#category: cs
-#description: |
-#  *Think Python* is an introduction to Python programming for beginners.
-#  It starts with basic concepts of programming, and is carefully designed to define all terms when they are first used
-#  and to develop each new concept in a logical progression.
-#tags:
-#- python
-#license: ccbysa
-#website: http://greenteapress.com/wp/think-python-2e/
-#---
-#id: think-OS
-#src: think-OS/
-#title: Think OS
-#author: Allen B. Downey
-#category: cs
-#description: |
-#  *Think OS* is an introduction to Operating Systems for programmers.
-#website: http://greenteapress.com/thinkos/
-#license: ccbync3
+---
+id: think-dsp
+src: think-dsp/code/
+subdir: think-dsp-code
+category: physics
+title: Think DSP
+description: |
+  *Think DSP* is an introduction to Digital Signal Processing in Python.
+
+  *This is the accompanying code for this book.*
+author: Allen B. Downey
+thumbnail: thumbs/think_dsp_cover.jpg
+website: http://greenteapress.com/wp/think-dsp/
+tags:
+- python
+license: gpl3
+---
+id: think-stats-2ed
+src: think-stats-2ed/code/
+subdir: think-stats-code
+category: stats
+title: Think Stats
+author: Allen B. Downey
+website: http://greenteapress.com/wp/think-stats-2e/
+thumbnail: thumbs/thinkstats2cover.jpg
+description: |
+  *Think Stats* is an introduction to Probability and Statistics for Python programmers.
+
+  *This is the accompanying code for this book.*
+tags:
+- python
+license: gpl3
+---
+id: think-bayes
+src: think-bayes/code/
+subdir: think-bayes-code
+category: stats
+title: Think Bayes
+author: Allen B. Downey
+website: http://greenteapress.com/wp/think-bayes/
+description: |
+  *Think Bayes* is an introduction to Bayesian statistics using computational methods.
+
+  *This is the accompanying code for this book.*
+tags:
+- python
+license: gpl3
+thumbnail: thumbs/think_bayes_cover_medium.png
+---
+id: think-python-2ed
+src: think-python-2ed/code/
+subdir: think-python-code
+title: Think Python
+author: Allen B. Downey
+thumbnail: thumbs/think_python2_medium.jpg
+category: cs
+description: |
+  *Think Python* is an introduction to Python programming for beginners.
+  It starts with basic concepts of programming, and is carefully designed to define all terms when they are first used
+  and to develop each new concept in a logical progression.
+
+  *This is the accompanying code for this book.*
+tags:
+- python
+license: ccby
+website: http://greenteapress.com/wp/think-python-2e/
+---
+id: think-OS
+src: think-OS/code/
+subdir: think-OS-code
+title: Think OS
+author: Allen B. Downey
+category: cs
+description: |
+  *Think OS* is an introduction to Operating Systems for programmers.
+
+  *This is the accompanying code for this book.*
+website: http://greenteapress.com/thinkos/
+license: ccbysa
 
 
