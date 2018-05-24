@@ -139,6 +139,16 @@ author: "Robert A. Beezer"
 license: ccbysa
 thumbnail: thumbs/sage-lin-alg.png
 ---
+id: paulsen-abstract-algebra
+src : paulsen-abstract-algebra/
+category: math
+title: "Abstract Alebra: An Interactive Approach"
+description: "Jupyter notebooks to accompany William Paulsen's [Abstract Algebra: An Interactive Approach, Second Edition](https://www.crcpress.com/Abstract-Algebra-An-Interactive-Approach-Second-Edition/Paulsen/p/book/9781498719766)."
+website: https://www.crcpress.com/Abstract-Algebra-An-Interactive-Approach-Second-Edition/Paulsen/p/book/9781498719766
+author: "William Paulsen"
+license: asis
+thumbnail: thumbs/aa-paulsen.png
+---
 id: ml-with-python
 src: introduction_to_ml_with_python/
 title: "Introduction to Machine Learning with Python"
