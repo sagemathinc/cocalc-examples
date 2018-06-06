@@ -240,12 +240,11 @@ category: math
 tags:
 - sage
 title: "Computational Mathematics with SageMath"
-author: "Paul Zimmermann, Alexandre Casamayou, Nathann Cohen, et al."
+author: "Paul Zimmermann et al."
 thumbnail: thumbs/cmws.jpg
 license: ccbysa
 description: |
-  This book, written by researchers and teachers at different levels (high school, undergraduate, graduate) focuses on the underlying mathematics, which is necessary to efficiently use Sage. In such a way, it is more a mathematical book illustrated by concrete examples with Sage than a reference manual.
-  The first part of the book is accessible to high school and undergraduate students. The content of the other parts is more suited for graduate students, teachers and researchers.
+  A book about the mathematics needed to use Sage efficiently, illustrated by concrete examples. The first part is accessible to high school and undergraduate students. The remainder is suited for graduate students, teachers, and researchers.
 website: http://sagebook.gforge.inria.fr/english.html
 ---
 id: math157
