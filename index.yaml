@@ -13,12 +13,12 @@ tags:
     name: Introduction
   python:
     name: Python
-    info: 'Make sure to pick a suitable Python environment (Python 2, Python 3, Anaconda, ...)'
+    info: "Make sure to pick a suitable Python environment (Python 2, Python 3, Anaconda, ...)"
   math:
     name: Mathematics
   julia:
     name: Julia
-    info: 'Be patient. Starting Julia the first time might require to recompile some modules.'
+    info: "Be patient. Starting Julia the first time might require to recompile some modules."
 # an entry can have exactly one license
 licenses:
   ccby: CC BY 4.0
@@ -56,7 +56,7 @@ categories:
     name: Miscellaneous
     weight: 1
 references:
-- cocalc-example-files/index.yaml
+  - cocalc-example-files/index.yaml
 ---
 id: cocalc-first-steps
 title: First Steps in CoCalc
@@ -66,22 +66,22 @@ license: a20
 thumbnail: thumbs/cocalc-first-steps.png
 category: intro
 tags:
-- intro
+  - intro
 description: |
   Quick introduction to CoCalc interface and basic functionalities.
 ---
-id: 'bayes-for-hackers'
+id: "bayes-for-hackers"
 title: "Bayesian Methods for Hackers"
 src: bayesian-methods-for-hackers/
 thumbnail: thumbs/bayesian.png
 description: |
-    Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
-author:  Cameron Davidson-Pilon
+  Hands-on tutorial how Bayesian Methods work, based on Python's PyMC library.
+author: Cameron Davidson-Pilon
 license: asis
 category: stats
 tags:
-- stats
-- python
+  - stats
+  - python
 ---
 id: cmichi-latex-templates
 src: cmichi-latex-templates/
@@ -91,7 +91,7 @@ category: latex
 license: mit
 description: |
   Collection of different LaTeX/XeTeX templates (cv, invoices, timesheets, letters, etc.).
-website: 'https://github.com/cmichi/latex-template-collection'
+website: "https://github.com/cmichi/latex-template-collection"
 ---
 id: deedy-latex-templates
 src: deedy-latex-templates/
@@ -99,7 +99,7 @@ title: "Deedy LaTeX Templates"
 thumbnail: thumbs/deedy-latex.png
 license: cc0
 category: latex
-description:  |
+description: |
   A concise set of Latex templates that serves a small set of needs - CV, Essays, Articles and Problem Sets.
 website: https://github.com/deedy/Latex-Templates
 #---
@@ -117,20 +117,20 @@ description: |
   Support information for article: http://www.hydrol-earth-syst-sci-discuss.net/hess-2016-363/
 ---
 id: datasci-notebooks
-src : data-science-ipython-notebooks/
+src: data-science-ipython-notebooks/
 title: "Data science Python notebooks"
 thumbnail: thumbs/datascience-tutorials.png
 category: datascience
 license: a20
 tags:
-- python
+  - python
 website: https://github.com/donnemartin/data-science-ipython-notebooks
 description: |
   Data science Python notebooks: Deep learning (TensorFlow, Theano, Caffe, Keras), scikit-learn, Kaggle,
   big data (Spark, Hadoop MapReduce, HDFS), matplotlib, pandas, NumPy, SciPy, Python essentials, AWS, and various command lines.
 ---
 id: beezer-linear-algebra
-src : beezer-linear-algebra/
+src: beezer-linear-algebra/
 category: math
 title: "Sage and Linear Algebra"
 description: "This is a collection of classroom-tested worksheets to accompany Beezer's [First Course in Linear Algebra](http://linear.pugetsound.edu/)."
@@ -140,7 +140,7 @@ license: ccbysa
 thumbnail: thumbs/sage-lin-alg.png
 ---
 id: paulsen-abstract-algebra
-src : paulsen-abstract-algebra/
+src: paulsen-abstract-algebra/
 category: math
 title: "Abstract Alebra: An Interactive Approach"
 description: "Jupyter notebooks to accompany William Paulsen's [Abstract Algebra: An Interactive Approach, Second Edition](https://www.crcpress.com/Abstract-Algebra-An-Interactive-Approach-Second-Edition/Paulsen/p/book/9781498719766)."
@@ -158,7 +158,7 @@ website: https://github.com/amueller/introduction_to_ml_with_python
 thumbnail: thumbs/intro-to-ml.jpg
 category: datascience
 tags:
-- python
+  - python
 ---
 id: sci-comp-python
 src: scientific-python-lectures/
@@ -168,7 +168,7 @@ website: https://github.com/jrjohansson/scientific-python-lectures
 thumbnail: thumbs/sci-computing-python.png
 category: datascience
 tags:
-- python
+  - python
 license: ccby
 ---
 id: python-data-science-handbook
@@ -178,7 +178,7 @@ title: Python Data Science Handbook
 author: Jake Vanderplas
 thumbnail: thumbs/PDSH-cover.png
 tags:
-- python
+  - python
 license: mit
 ---
 id: stanford-tensorflow-tutorials
@@ -189,7 +189,7 @@ description: >
   This repository contains code examples for the course **CS 20SI: TensorFlow for Deep Learning Research**.
 website: http://cs20si.stanford.edu
 tags:
-- python
+  - python
 ---
 id: aaron-tresham-calc
 category: math
@@ -202,8 +202,8 @@ description: |
   Files are publicly hosted [here](https://cocalc.com/share/f8df5b36830778dde7b3c3c4e68c542bbaeeefba/Aaron%20Tresham%20Calculus%20Material/?viewer=share).
 thumbnail: thumbs/tresham-calc.png
 tags:
-- calc
-- sage
+  - calc
+  - sage
 license: ccbysa
 ---
 id: statistical-rethinking-python-PyMC3
@@ -228,7 +228,7 @@ author: "Tom Judson"
 website: "http://abstract.pugetsound.edu/"
 thumbnail: thumbs/aata.jpg
 tags:
-- sage
+  - sage
 description: |
   This open source textbook designed to teach the principles and theory of abstract algebra to college juniors and seniors in a rigorous manner.
   Its strengths include a wide range of exercises, both computational and theoretical, plus many nontrivial applications.
@@ -238,7 +238,7 @@ id: cmws
 src: cmws/
 category: math
 tags:
-- sage
+  - sage
 title: "Computational Mathematics with SageMath"
 author: "Paul Zimmermann et al."
 thumbnail: thumbs/cmws.jpg
@@ -251,7 +251,7 @@ id: math157
 src: math157/
 category: math
 tags:
-- sage
+  - sage
 title: "Math 157: Intro to Mathematical Software"
 author: "Kiran S. Kedlaya and William Stein"
 thumbnail: thumbs/math157.png
@@ -273,7 +273,7 @@ description: |
   It is primarily about complexity science, but studying complexity science gives you a chance to explore topics and ideas
   you might not encounter otherwise, practice programming in Python, and learn about data structures and algorithms.
 tags:
-- python
+  - python
 thumbnail: thumbs/think_complexity_cover.png
 website: http://greenteapress.com/wp/think-complexity-2e/
 ---
@@ -290,7 +290,7 @@ author: Allen B. Downey
 thumbnail: thumbs/think_dsp_cover.jpg
 website: http://greenteapress.com/wp/think-dsp/
 tags:
-- python
+  - python
 license: gpl3
 ---
 id: think-stats-2ed
@@ -306,7 +306,7 @@ description: |
 
   *This is the accompanying code for this book.*
 tags:
-- python
+  - python
 license: gpl3
 ---
 id: think-bayes
@@ -321,7 +321,7 @@ description: |
 
   *This is the accompanying code for this book.*
 tags:
-- python
+  - python
 license: gpl3
 thumbnail: thumbs/think_bayes_cover_medium.png
 ---
@@ -339,7 +339,7 @@ description: |
 
   *This is the accompanying code for this book.*
 tags:
-- python
+  - python
 license: ccby
 website: http://greenteapress.com/wp/think-python-2e/
 ---
@@ -355,5 +355,10 @@ description: |
   *This is the accompanying code for this book.*
 website: http://greenteapress.com/thinkos/
 license: ccbysa
-
-
+---
+id: scikit-image-tutorials
+src: scikit-image-tutorials/
+title: Scikit-Image Tutorials
+category: datascience
+description: |
+  A collection of tutorials for the scikit-image package.
