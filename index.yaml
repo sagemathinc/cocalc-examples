@@ -361,5 +361,7 @@ src: scikit-image-tutorials/
 title: Scikit-Image Tutorials
 category: datascience
 thumbnail: thumbs/scikit-image.png
+website: https://github.com/scikit-image/skimage-tutorials
+license: cc0
 description: |
   A collection of tutorials for the scikit-image package.
