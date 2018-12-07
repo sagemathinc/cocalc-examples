@@ -360,5 +360,6 @@ id: scikit-image-tutorials
 src: scikit-image-tutorials/
 title: Scikit-Image Tutorials
 category: datascience
+thumbnail: thumbs/scikit-image.png
 description: |
   A collection of tutorials for the scikit-image package.
