@@ -41,6 +41,10 @@ or with resets
 
     git submodule foreach "git fetch origin; git checkout master; git reset --hard origin/master"
 
+You can also do `make update` or something like that (see `makefile`)
+
+To add a new submodule, just do [what the git doc says](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
+
 ## License
 
 Unless otherwise noted,
