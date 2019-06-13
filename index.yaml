@@ -19,16 +19,19 @@ tags:
   julia:
     name: Julia
     info: "Be patient. Starting Julia the first time might require to recompile some modules."
+  finance:
+    name: Finance
 # an entry can have exactly one license
 licenses:
+  a20: Apache 2.0
+  asis: AS IS
+  bsd: BSD
+  cc0: CC0 1.0 Universal
   ccby: CC BY 4.0
   ccbysa: CC BY-SA
   ccbync3: CC BY-NC 3.0
-  asis: AS IS
   mit: MIT
-  cc0: CC0 1.0 Universal
   gpl3: GPLv3
-  a20: Apache 2.0
   gfdl: GNU Free Documentation License
 # each entry must have exactly one category
 # weight: additional weighting for sorting by category – default 0
@@ -55,6 +58,8 @@ categories:
   misc:
     name: Miscellaneous
     weight: 1
+  finance:
+    name: Finance
 references:
   - cocalc-example-files/index.yaml
 ---
@@ -376,3 +381,20 @@ website: https://github.com/scikit-image/skimage-tutorials
 license: cc0
 description: |
   A collection of tutorials for the scikit-image package.
+---
+id: public-finance-2018-2019
+src: public_finance_2018_2019/
+title: Public Finance 2018/2019 UCSC
+author: Duccio Gamannossi degl'Innocenti
+website: https://github.com/dgdi/public_finance_2018_2019
+license: bsd
+category: finance
+tags:
+  - finance
+description: |
+  # Repository for the course: Public Finance 2018/2019 UCSC
+
+  by [Duccio Gamannossi degl'Innocenti](http://www.dgdi.me)
+
+  This repository stores the [SageMath](http://www.sagemath.org/) notebooks for the course
+  Public Finance 2018/2019 at the Catholic University of the Sacred Heart, Milan.

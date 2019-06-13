@@ -73,3 +73,6 @@
 [submodule "vqe-playground"]
 	path = vqe-playground
 	url = https://github.com/JavaFXpert/vqe-playground.git
+[submodule "public_finance_2018_2019"]
+	path = public_finance_2018_2019
+	url = https://github.com/dgdi/public_finance_2018_2019.git
