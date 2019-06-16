@@ -392,9 +392,7 @@ category: finance
 tags:
   - finance
 description: |
-  # Repository for the course: Public Finance 2018/2019 UCSC
-
-  by [Duccio Gamannossi degl'Innocenti](http://www.dgdi.me)
-
   This repository stores the [SageMath](http://www.sagemath.org/) notebooks for the course
   Public Finance 2018/2019 at the Catholic University of the Sacred Heart, Milan.
+
+  Author: [Duccio Gamannossi degl'Innocenti](http://www.dgdi.me)
