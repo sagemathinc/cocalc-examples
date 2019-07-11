@@ -401,6 +401,7 @@ description: |
   Author: [Duccio Gamannossi degl'Innocenti](http://www.dgdi.me)
 ---
 id: nbgrader-demo
+title: NBGrader Examples
 src: nbgrader-demo/instructor/source/ps1/
 website: https://github.com/jhamrick/nbgrader-demo
 category: demos
