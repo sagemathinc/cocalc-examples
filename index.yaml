@@ -402,6 +402,7 @@ description: |
 id: nbgrader-demo
 title: NBGrader Examples
 src: nbgrader-demo/instructor/source/ps1/
+subdir: nbgrader-demo
 website: https://github.com/jhamrick/nbgrader-demo
 category: demos
 description: |
