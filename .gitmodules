@@ -76,3 +76,6 @@
 [submodule "public_finance_2018_2019"]
 	path = public_finance_2018_2019
 	url = https://github.com/dgdi/public_finance_2018_2019.git
+[submodule "nbgrader-demo"]
+	path = nbgrader-demo
+	url = https://github.com/jhamrick/nbgrader-demo.git

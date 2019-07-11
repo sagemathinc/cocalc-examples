@@ -21,6 +21,9 @@ tags:
     info: "Be patient. Starting Julia the first time might require to recompile some modules."
   finance:
     name: Finance
+  demos:
+    name: Demonstrations
+    info: "Feature demonstrations, tutorials, etc."
 # an entry can have exactly one license
 licenses:
   a20: Apache 2.0
@@ -396,3 +399,10 @@ description: |
   Public Finance 2018/2019 at the Catholic University of the Sacred Heart, Milan.
 
   Author: [Duccio Gamannossi degl'Innocenti](http://www.dgdi.me)
+---
+id: nbgrader-demo
+src: nbgrader-demo/instructor/source/ps1/
+website: https://github.com/jhamrick/nbgrader-demo
+category: demos
+description: |
+  A demonstration how to write [NBGrader](https://nbgrader.readthedocs.io/en/stable/) notebooks.
