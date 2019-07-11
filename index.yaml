@@ -60,8 +60,6 @@ categories:
     weight: 1
   finance:
     name: Finance
-  demos:
-    name: Demonstrations
 references:
   - cocalc-example-files/index.yaml
 ---
@@ -404,6 +402,6 @@ title: NBGrader Examples
 src: nbgrader-demo/instructor/source/ps1/
 subdir: nbgrader-demo
 website: https://github.com/jhamrick/nbgrader-demo
-category: demos
+category: intro
 description: |
   A demonstration how to write [NBGrader](https://nbgrader.readthedocs.io/en/stable/) notebooks.
