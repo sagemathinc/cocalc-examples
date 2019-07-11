@@ -387,8 +387,8 @@ description: |
 ---
 id: public-finance-2018-2019
 src: public_finance_2018_2019/
-title: Public Finance 2018/2019 UCSC
-author: Duccio Gamannossi degl'Innocenti
+title: "Public Finance 2018/2019 UCSC"
+author: "Duccio Gamannossi degl'Innocenti"
 website: https://github.com/dgdi/public_finance_2018_2019
 license: bsd
 category: finance
