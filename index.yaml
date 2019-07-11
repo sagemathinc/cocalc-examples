@@ -21,9 +21,6 @@ tags:
     info: "Be patient. Starting Julia the first time might require to recompile some modules."
   finance:
     name: Finance
-  demos:
-    name: Demonstrations
-    info: "Feature demonstrations, tutorials, etc."
 # an entry can have exactly one license
 licenses:
   a20: Apache 2.0
@@ -41,7 +38,7 @@ licenses:
 categories:
   intro:
     name: Introduction
-    weight: -1
+    weight: -2
   stats:
     name: Statistics
   cs:
@@ -63,6 +60,9 @@ categories:
     weight: 1
   finance:
     name: Finance
+  demos:
+    name: Demonstrations
+    weight: -1
 references:
   - cocalc-example-files/index.yaml
 ---
