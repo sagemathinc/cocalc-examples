@@ -38,7 +38,7 @@ licenses:
 categories:
   intro:
     name: Introduction
-    weight: -2
+    weight: -1
   stats:
     name: Statistics
   cs:
@@ -62,7 +62,6 @@ categories:
     name: Finance
   demos:
     name: Demonstrations
-    weight: -1
 references:
   - cocalc-example-files/index.yaml
 ---
