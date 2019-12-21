@@ -80,6 +80,7 @@ src: first-steps/src/
 subdir: first-steps
 license: a20
 thumbnail: thumbs/cocalc-first-steps.png
+preview: "https://cocalc.com/share/db57295bb8c40e9b425cc9be4107cdfc39929c8c/examples/first-steps?viewer=share"
 category: intro
 tags:
   - intro
@@ -95,6 +96,7 @@ description: |
 author: Cameron Davidson-Pilon
 license: asis
 category: stats
+preview: "https://cocalc.com/share/8d8556442c370812af9f5268e7fa66a5262931f5/examples/bayesian-methods-for-hackers?viewer=share"
 tags:
   - stats
   - python
@@ -378,6 +380,7 @@ title: Scikit-Image Tutorials
 category: datascience
 thumbnail: thumbs/scikit-image.png
 website: https://github.com/scikit-image/skimage-tutorials
+preview: "https://share.cocalc.com/share/bf8bd3b9a338f447bf053411c13165e35d66b9a5/examples/scikit-image-tutorials/?viewer=share"
 license: cc0
 description: |
   A collection of tutorials for the scikit-image package.

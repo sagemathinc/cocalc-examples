@@ -10,8 +10,8 @@ import itertools as it
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 
-
 # TODO this is silly code, please fix it ...
+
 
 def update_meta(meta, new_meta):
     '''
@@ -23,13 +23,16 @@ def update_meta(meta, new_meta):
         meta['licenses'].update(new_meta['licenses'])
     if 'categories' in new_meta:
         # if you introduce a new category, it must be unique
-        assert all(nm not in meta['categories'].keys() for nm in new_meta['categories'].keys())
+        assert all(nm not in meta['categories'].keys()
+                   for nm in new_meta['categories'].keys())
         meta['categories'].update(new_meta['categories'])
 
 
 # TODO this is just for a unique id for each document. maybe make it stable?
 ID = it.count(0)
 all_ids = set()
+
+
 def init_doc(docs, prefix):
     for doc in docs:
         doc['src'] = os.path.join(prefix, doc['src'])
@@ -43,6 +46,7 @@ def init_doc(docs, prefix):
             assert newid not in all_ids
             all_ids.add(newid)
             doc['id'] = newid
+
 
 # prefix is the path to prefix
 def resolve_references(meta, docs, prefix=''):
@@ -59,29 +63,53 @@ def resolve_references(meta, docs, prefix=''):
         del meta['references']
     return meta, docs
 
+
 def consistency_checks(meta, docs):
     print('done. running consistency checks ...')
     cats = meta['categories']
     tags = meta['tags']
-    allowed_keys = ['id', 'src', 'title', 'description', 'website', 'author', 'license', 'category', 'tags', 'thumbnail', 'subdir']
+    allowed_keys = [
+        'id',
+        'src',
+        'title',
+        'description',
+        'website',
+        'author',
+        'license',
+        'category',
+        'tags',
+        'thumbnail',
+        'subdir',
+        'preview',
+    ]
     for doc in docs:
+        title = doc["title"]
         print('checking {0[id]}: {0[title]}'.format(doc))
-        assert all(k in allowed_keys for k in doc.keys()), "keys: {}".format(list(doc.keys()))
+        assert all(k in allowed_keys
+                   for k in doc.keys()), "keys: {}".format(list(doc.keys()))
         assert 'title' in doc, "doc {} misses a title".format(doc.id)
-        assert 'category' in doc, "doc {} misses category".format(doc['title'])
-        assert 'src' in doc, "doc {} misses src".format(doc['title'])
-        assert doc['src'].endswith('/'), 'doc "{}" src must end with a slash to signal it is a directory. single files will be supported later ...'.format(doc['title'])
-        assert os.path.exists(os.path.join(ROOT, doc['src'])), 'doc "{}" src path does not exist!'
+        assert 'category' in doc, f"doc {title} misses category"
+        assert 'src' in doc, f"doc {title} misses src"
+        assert doc['src'].endswith(
+            '/'
+        ), f'doc "{title}" src must end with a slash to signal it is a directory. single files will be supported later ...'
+        assert os.path.exists(os.path.join(
+            ROOT, doc['src'])), 'doc "{}" src path does not exist!'
         assert doc['category'] in cats
         if 'tags' in doc:
             for t in doc['tags']:
-                assert t in tags, 'Tag {} of document {} not in meta.tags'.format(t, doc['id'])
+                id = doc['id']
+                assert t in tags, f'Tag {f} of document {id} not in meta.tags'
         if 'thumbnail' in doc:
-            assert os.path.exists(doc['thumbnail']), 'Thumbnail {0[thumbnail]} for {0[id]} does not exist'.format(doc)
+            assert os.path.exists(
+                doc['thumbnail']
+            ), 'Thumbnail {0[thumbnail]} for {0[id]} does not exist'.format(
+                doc)
     for k, v in cats.items():
         assert 'name' in v
     for k, v in tags.items():
         assert 'name' in v
+
 
 def debug(meta, docs):
     print("META:")
@@ -90,9 +118,11 @@ def debug(meta, docs):
     for doc in docs:
         pprint(doc)
 
+
 def export_json(meta, docs):
     with open('index.json', 'w') as out:
         json.dump({'metadata': meta, 'documents': docs}, out, indent=1)
+
 
 def main(index_fn):
     meta, *docs = yaml.load_all(open(index_fn))
@@ -103,5 +133,6 @@ def main(index_fn):
     export_json(meta, docs)
     print('all done.')
 
+
 if __name__ == '__main__':
-    main(index_fn = 'index.yaml')
+    main(index_fn='index.yaml')
