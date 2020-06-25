@@ -62,17 +62,18 @@ categories:
     name: Finance
 references:
   - cocalc-example-files/index.yaml
----
-id: vqe-playground
-title: "Variational Quantum Eigensolver Playground"
-src: vqe-playground/
-license: a20
-thumbnail: thumbs/vqe-playground.png
-category: physics
-description: >
-  Variational Quantum Eigensolver: gaining intuition about Variational Quantum Eigensolver.
-  (based on [Quiskit](https://qiskit.org/), the "Quntum Information Science Kit")
-website: "https://github.com/JavaFXpert/vqe-playground"
+## DISABLED: software is in flux. However, the is/should be a custom software image for this
+#---
+#id: vqe-playground
+#title: "Variational Quantum Eigensolver Playground"
+#src: vqe-playground/
+#license: a20
+#thumbnail: thumbs/vqe-playground.png
+#category: physics
+#description: >
+#  Variational Quantum Eigensolver: gaining intuition about Variational Quantum Eigensolver.
+#  (based on [Quiskit](https://qiskit.org/), the "Quntum Information Science Kit")
+#website: "https://github.com/JavaFXpert/vqe-playground"
 ---
 id: cocalc-first-steps
 title: First Steps in CoCalc
@@ -317,7 +318,7 @@ subdir: think-stats-code
 category: stats
 title: Think Stats
 author: Allen B. Downey
-website: http://greenteapress.com/wp/think-stats-2e/
+website: "http://greenteapress.com/wp/think-stats-2e/"
 thumbnail: thumbs/thinkstats2cover.jpg
 description: |
   *Think Stats* is an introduction to Probability and Statistics for Python programmers.
@@ -333,7 +334,7 @@ subdir: think-bayes-code
 category: stats
 title: Think Bayes
 author: Allen B. Downey
-website: http://greenteapress.com/wp/think-bayes/
+website: "http://greenteapress.com/wp/think-bayes/"
 description: |
   *Think Bayes* is an introduction to Bayesian statistics using computational methods.
 
@@ -359,7 +360,7 @@ description: |
 tags:
   - python
 license: ccby
-website: http://greenteapress.com/wp/think-python-2e/
+website: "http://greenteapress.com/wp/think-python-2e/"
 ---
 id: think-OS
 src: think-OS/code/
@@ -379,7 +380,7 @@ src: scikit-image-tutorials/
 title: Scikit-Image Tutorials
 category: datascience
 thumbnail: thumbs/scikit-image.png
-website: https://github.com/scikit-image/skimage-tutorials
+website: "https://github.com/scikit-image/skimage-tutorials"
 preview: "https://share.cocalc.com/share/bf8bd3b9a338f447bf053411c13165e35d66b9a5/examples/scikit-image-tutorials/?viewer=share"
 license: cc0
 description: |
@@ -389,7 +390,7 @@ id: public-finance-2018-2019
 src: public_finance_2018_2019/
 title: "Public Finance 2018/2019 UCSC"
 author: "Duccio Gamannossi degl'Innocenti"
-website: https://github.com/dgdi/public_finance_2018_2019
+website: "https://github.com/dgdi/public_finance_2018_2019"
 license: bsd
 category: finance
 tags:
@@ -404,7 +405,25 @@ id: nbgrader-demo
 title: NBGrader Examples
 src: nbgrader-demo/instructor/source/ps1/
 subdir: nbgrader-demo
-website: https://github.com/jhamrick/nbgrader-demo
+website: "https://github.com/jhamrick/nbgrader-demo"
 category: intro
 description: |
   A demonstration how to write [NBGrader](https://nbgrader.readthedocs.io/en/stable/) notebooks.
+---
+id: whirldwind-tour-of-python
+src: WhirlwindTourOfPython/
+title: "A Whirlwind Tour of Python"
+website: "https://www.oreilly.com/library/view/a-whirlwind-tour/9781492037859/"
+license: cc0
+category: cs
+tags:
+  - python
+thumbnail: thumbs/whirlwind.jpg
+description: |
+  *A Whirlwind Tour of Python* is a fast-paced introduction to essential
+  components of the Python language for researchers and developers who are
+  already familiar with programming in another language.
+
+  This repository contains the Jupyter Notebooks behind the O'Reilly report,
+  [*A Whirlwind Tour of Python*](http://www.oreilly.com/programming/free/a-whirlwind-tour-of-python.csp)
+  (free [100-page pdf](http://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf)).
