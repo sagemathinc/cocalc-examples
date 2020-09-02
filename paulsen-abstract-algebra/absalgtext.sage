@@ -7,8 +7,11 @@
 ##  Algebra, an Interactive Approach" by William     ##
 ##  Paulsen.                                         ##
 ##                                                   ##
-##  Users of this file are encouraged to buy a copy  ##
-##  of the textbook.                                 ##
+##  It is not to be distributed without the          ##
+##  textbook, nor used by anyone without possession  ##
+##  of a copy of the textbook.                       ##
+##                                                   ##
+##  Last Updated:  08/29/2020                        ##
 ##                                                   ##
 #######################################################
 
@@ -18,16 +21,16 @@
 try:
    gap.eval("SmallGroup(1,1)")
 except:   
-   print "Additional databases must be downloaded from the internet.  Please wait."
+   print("Additional databases must be downloaded from the internet.  Please wait.")
    try:
        install_package('database_gap')
    except:
-       print "Error in installing database_gap."
-       print "For Linux users, this will have to be installed manually.  Type:"
-       print "    sudo sage -i database_gap"
-       print "in the terminal window."
+       print("Error in installing database_gap.")
+       print("For Linux users, this will have to be installed manually.  Type:")
+       print("    sudo sage -i database_gap")
+       print("in the terminal window.")
    else:    
-       print "These new databases will be available the next time Sage is started."
+       print("These new databases will be available the next time Sage is started.")
 
 
 ######################################################
@@ -672,7 +675,7 @@ def ShowTerry():
         Spin = var('Spin')
         FlipLft = var('FlipLft')
         FlipRt = var('FlipRt')
-    sqrt3 = sqrt(3).numerical_approx()
+    sqrt3 = sqrt(3).n()
     Graff = Graphics()
     Graff += polygon([(0,0),(0,2),(sqrt3,-1)], color = TerryColor[0])
     Graff += polygon([(0,0),(0,2),(-sqrt3,-1)], color = TerryColor[1]) 
@@ -681,7 +684,7 @@ def ShowTerry():
        
 def Terry(*args):
     global TerryColor
-    sqrt3 = sqrt(3).numerical_approx()
+    sqrt3 = sqrt(3).n()
     v = [] 
     if(IdentityElement == 'Stay'):
         ## If InitTerry has been defined, then like Mathematica, we want Terry to take the shortcut.
@@ -766,7 +769,10 @@ def Terry(*args):
         else:
             print("Invalid rotation")
     aniTerry = animate(v, xmin = -2, xmax = 2, ymin = -2, ymax = 2, aspect_ratio = 1, axes = false)
-    return aniTerry.show(delay = 50, iterations = 1)       
+    try:
+        return aniTerry.show(delay = 50, iterations = 1, gif = True)
+    except:
+        return aniTerry.show(delay = 50, iterations = 1)       
        
 BookColor = []  # Initialize so we can use it later
  
@@ -883,12 +889,12 @@ def RotateOctahedron(*args):
         if(arg == a):
             for i in range(11): 
                 th = pi*i/10.0  # theta ranges from 0 to pi, inclusive  
-                X = OctProj(numerical_approx((1 + cos(th))/2), numerical_approx((-1 + cos(th))/2), numerical_approx(-sqrt(2)*sin(th)/2))
-                nX = OctProj(numerical_approx((-1 - cos(th))/2), numerical_approx((1 - cos(th))/2), numerical_approx(sqrt(2)*sin(th)/2))
-                Y = OctProj(numerical_approx((-1 + cos(th))/2), numerical_approx((1 + cos(th))/2), numerical_approx(-sqrt(2)*sin(th)/2))
-                nY = OctProj(numerical_approx((1 - cos(th))/2), numerical_approx((-1 - cos(th))/2), numerical_approx(sqrt(2)*sin(th)/2))
-                Z = OctProj(numerical_approx(sqrt(2)*sin(th)/2), numerical_approx(sqrt(2)*sin(th)/2), numerical_approx(cos(th)))
-                nZ = OctProj(numerical_approx(-sqrt(2)*sin(th)/2), numerical_approx(-sqrt(2)*sin(th)/2), numerical_approx(-cos(th)))
+                X = OctProj(N((1 + cos(th))/2), N((-1 + cos(th))/2), N(-sqrt(2)*sin(th)/2))
+                nX = OctProj(N((-1 - cos(th))/2), N((1 - cos(th))/2), N(sqrt(2)*sin(th)/2))
+                Y = OctProj(N((-1 + cos(th))/2), N((1 + cos(th))/2), N(-sqrt(2)*sin(th)/2))
+                nY = OctProj(N((1 - cos(th))/2), N((-1 - cos(th))/2), N(sqrt(2)*sin(th)/2))
+                Z = OctProj(N(sqrt(2)*sin(th)/2), N(sqrt(2)*sin(th)/2), N(cos(th)))
+                nZ = OctProj(N(-sqrt(2)*sin(th)/2), N(-sqrt(2)*sin(th)/2), N(-cos(th)))
                 Graff = Graphics()
                 if th < 0.3455: # cutoff for this particular projection function
                     Graff += polygon([X,Y,Z], rgbcolor = OctColor[0])
@@ -931,12 +937,12 @@ def RotateOctahedron(*args):
         elif(arg == b):
             for i in range(11):
                 th = 2*pi*i/3/10.0  # theta ranges from 0 to 2pi/3, inclusive 
-                X = OctProj(numerical_approx(1/3 + 2*cos(th)/3), numerical_approx(1/3 - cos(th)/3 + sin(th)/sqrt(3)), numerical_approx(1/3 - cos(th)/3 - sin(th)/sqrt(3)))
-                nX = OctProj(numerical_approx(-1/3 - 2*cos(th)/3), numerical_approx(-1/3 + cos(th)/3 - sin(th)/sqrt(3)), numerical_approx(-1/3 + cos(th)/3 + sin(th)/sqrt(3)))
-                Y = OctProj(numerical_approx(1/3 - cos(th)/3 - sin(th)/sqrt(3)), numerical_approx(1/3 + 2*cos(th)/3), numerical_approx(1/3 - cos(th)/3 + sin(th)/sqrt(3))) 
-                nY = OctProj(numerical_approx(-1/3 + cos(th)/3 + sin(th)/sqrt(3)), numerical_approx(-1/3 - 2*cos(th)/3), numerical_approx(-1/3 + cos(th)/3 - sin(th)/sqrt(3)))    
-                Z = OctProj(numerical_approx(1/3 - cos(th)/3 + sin(th)/sqrt(3)), numerical_approx(1/3 - cos(th)/3 - sin(th)/sqrt(3)), numerical_approx(1/3 + 2*cos(th)/3)) 
-                nZ = OctProj(numerical_approx(-1/3 + cos(th)/3 - sin(th)/sqrt(3)), numerical_approx(-1/3 + cos(th)/3 + sin(th)/sqrt(3)), numerical_approx(-1/3 - 2*cos(th)/3)) 
+                X = OctProj(N(1/3 + 2*cos(th)/3), N(1/3 - cos(th)/3 + sin(th)/sqrt(3)), N(1/3 - cos(th)/3 - sin(th)/sqrt(3)))
+                nX = OctProj(N(-1/3 - 2*cos(th)/3), N(-1/3 + cos(th)/3 - sin(th)/sqrt(3)), N(-1/3 + cos(th)/3 + sin(th)/sqrt(3)))
+                Y = OctProj(N(1/3 - cos(th)/3 - sin(th)/sqrt(3)), N(1/3 + 2*cos(th)/3), N(1/3 - cos(th)/3 + sin(th)/sqrt(3))) 
+                nY = OctProj(N(-1/3 + cos(th)/3 + sin(th)/sqrt(3)), N(-1/3 - 2*cos(th)/3), N(-1/3 + cos(th)/3 - sin(th)/sqrt(3)))    
+                Z = OctProj(N(1/3 - cos(th)/3 + sin(th)/sqrt(3)), N(1/3 - cos(th)/3 - sin(th)/sqrt(3)), N(1/3 + 2*cos(th)/3)) 
+                nZ = OctProj(N(-1/3 + cos(th)/3 - sin(th)/sqrt(3)), N(-1/3 + cos(th)/3 + sin(th)/sqrt(3)), N(-1/3 - 2*cos(th)/3)) 
                 Graff = Graphics()
                 if th < .68:
                     Graff += polygon([X,Y,Z], rgbcolor = OctColor[0])
@@ -967,10 +973,10 @@ def RotateOctahedron(*args):
                 th = pi*i/2/10.0  # theta ranges from 0 to pi/2, inclusive
                 X = OctProj(1.0,0.0,0.0)
                 nX = OctProj(-1.0,0.0,0.0)
-                Y = OctProj(0.0, numerical_approx(cos(th)), numerical_approx(-sin(th)))
-                nY = OctProj(0.0, numerical_approx(-cos(th)), numerical_approx(sin(th)))
-                Z = OctProj(0.0, numerical_approx(sin(th)), numerical_approx(cos(th)))
-                nZ = OctProj(0.0, numerical_approx(-sin(th)), numerical_approx(-cos(th)))
+                Y = OctProj(0.0, N(cos(th)), N(-sin(th)))
+                nY = OctProj(0.0, N(-cos(th)), N(sin(th)))
+                Z = OctProj(0.0, N(sin(th)), N(cos(th)))
+                nZ = OctProj(0.0, N(-sin(th)), N(-cos(th)))
                 Graff = Graphics()
                 Graff += polygon([X,Y,Z], rgbcolor = OctColor[0])
                 Graff += polygon([X,nY,Z], rgbcolor = OctColor[2])
@@ -990,7 +996,10 @@ def RotateOctahedron(*args):
         else:
             print("Invalid rotation")
     aniOct = animate(v, xmin = -1, xmax = 1, ymin = -1.03, ymax = 1.03, aspect_ratio = 1, axes = false)
-    return aniOct.show(delay = 50, iterations = 1)
+    try:
+        return aniOct.show(delay = 50, iterations = 1, gif = True)
+    except:
+        return aniOct.show(delay = 50, iterations = 1)
     
 PuzColor = [(1,0,0), (1,0,0), (1,0,0), (1,0,0), (1,0,0), (1,0,0), (1,1,0), (1,1,0), (1,1,0), (1,1,0), (1,1,0), (1,1,0), (0,1,0), (0,1,0), (0,1,0), (0,1,0), (0,1,0), (0,1,0), (0,0,1), (0,0,1), (0,0,1), (0,0,1), (0,0,1), (0,0,1)]    
     
@@ -1154,10 +1163,10 @@ def HideCorners():
     
 def ShowRationals(a,b):
     import fractions
-    A = numerical_approx(a)
-    B = numerical_approx(b)
+    A = N(a)
+    B = N(b)
     if A == B:
-        print "Endpoints must be different"
+        print("Endpoints must be different")
         return None   
     if A > B:
         q = A
@@ -1170,7 +1179,7 @@ def ShowRationals(a,b):
         PrintPoint = False
         for p in range(ceil(A*q), B*q +1):
             if fractions.gcd(p, q) == 1:
-                QuoList.append((numerical_approx(p)/numerical_approx(q), 0.75^(r-1)))
+                QuoList.append((N(p)/N(q), 0.75^(r-1)))
                 PrintPoint = True
         if PrintPoint:
             r = r+1  
@@ -1195,18 +1204,18 @@ def CountableQ(n):
     for q in range(1,17):
         for p in range(-NN*q, NN*q +1):
             if fractions.gcd(p, q) == 1:
-                QuoList.append((numerical_approx(p)/numerical_approx(q), 0.75^(q-1)))
+                QuoList.append((N(p)/N(q), 0.75^(q-1)))
     G += point(QuoList)            
     for q in range(-floor(NN/2),(NN+1)/2):
         G += line([(2*q,1),(2*q+1,1)])
     for q in range(1, NN+1):
         G += line([(q-.5,.75),(q,1)])    
         G += line([(-q+.5,.75),(-q,1)])    
-        G += line([(-numerical_approx(1)/(q+1),(.75)^q),(numerical_approx(1)/(q+1),(.75)^q)])
+        G += line([(-N(1)/(q+1),(.75)^q),(N(1)/(q+1),(.75)^q)])
     for p in range(1,NN):
         for q in range(2, NN-p+2):
-            G += line([(p+numerical_approx(1)/(q+1)-1,(.75)^q),  (p-numerical_approx(1)/(q+1),(.75)^q),  (p+numerical_approx(1)/q,(.75)^(q-1))])    
-            G += line([(1-p-numerical_approx(1)/(q+1),(.75)^q),  (numerical_approx(1)/(q+1)-p,(.75)^q),  (-p-numerical_approx(1)/q,(.75)^(q-1))])
+            G += line([(p+N(1)/(q+1)-1,(.75)^q),  (p-N(1)/(q+1),(.75)^q),  (p+N(1)/q,(.75)^(q-1))])    
+            G += line([(1-p-N(1)/(q+1),(.75)^q),  (N(1)/(q+1)-p,(.75)^q),  (-p-N(1)/q,(.75)^(q-1))])
     return G.show(aspect_ratio = NN, frame = True, axes = False)           
         
 def PolarPlot():
@@ -1514,11 +1523,11 @@ class GroupSet:
         return GroupSet([other]) + self      
     def __neg__(self):
         # this is only used for rings.  We take the negative of all of the elements in the list.
-        N = []
+        NN = []
         for item in self._List:
-            N.append(-item)
-        N.sort()
-        return GroupSet(N)    
+            NN.append(-item)
+        NN.sort()
+        return GroupSet(NN)    
     def __sub__(self, other):
         return self + (-other) # this should work is all cases.    
     def __cmp__(self, other):
@@ -1699,11 +1708,11 @@ class Homomorph:
                     if z in grp:
                         # z is already in the list, check that fun[g1]*fun[g2] = fun[g1*g2]
                         if prod != self.Out[grp.index(z)]:
-                            print str(self.Out[grp.index(g1)]) + " * " + str(self.Out[grp.index(g2)] ) + " is not " + str(self.Out[grp.index(z)])
+                            print(str(self.Out[grp.index(g1)]) + " * " + str(self.Out[grp.index(g2)] ) + " is not " + str(self.Out[grp.index(z)]))
                             return "Homomorphism failed"
                     else:
                         if not(prod in self.Target):
-                            print str(prod) + " is not in target."
+                            print(str(prod) + " is not in target.")
                             return "Homomorphism failed"
                         prod = self.Target[self.Target.index(prod)]
                         grp.append(z)   
@@ -1714,12 +1723,12 @@ class Homomorph:
                         if z in grp:
                             # z is already in the list, check that fun[g1] + fun[g2] = fun[g1 + g2]  
                             if self.Out[grp.index(g1)] + self.Out[grp.index(g2)] != self.Out[grp.index(z)]:
-                                print str(self.Out[grp.index(g1)]) + " + " + str(self.Out[grp.index(g2)] ) + " is not " + str(self.Out[grp.index(z)])
+                                print(str(self.Out[grp.index(g1)]) + " + " + str(self.Out[grp.index(g2)] ) + " is not " + str(self.Out[grp.index(z)]))
                                 return "Homomorphism failed" 
                         else: 
                             summ = self.Out[grp.index(g1)] + self.Out[grp.index(g2)]
                             if not(summ in self.Target):
-                                print str(prod) + " is not in target."
+                                print(str(prod) + " is not in target.")
                                 return "Homomorphism failed"        
                             grp.append(z)   
                             self.In.append(self.Domain[z-1])
@@ -1738,11 +1747,11 @@ class Homomorph:
                         # replace z with the form that is in grp.
                         # z = grp[grp.index(z)]
                         if prod != self.Out[self.In.index(z)]:
-                            print str(self.Out[self.In.index(g1)])+" * "+str(self.Out[self.In.index(g2)])+" is not "+str(self.Out[self.In.index(z)])
+                            print(str(self.Out[self.In.index(g1)])+" * "+str(self.Out[self.In.index(g2)])+" is not "+str(self.Out[self.In.index(z)]))
                             return "Homomorphism failed"
                     else:
                         if not(prod in self.Target):
-                            print str(prod) + " is not in target."
+                            print(str(prod) + " is not in target.")
                             return "Homomorphism failed"
                         prod = self.Target[self.Target.index(prod)]    
                         grp.append(z) 
@@ -1752,12 +1761,12 @@ class Homomorph:
                         z = g1 + g2
                         if z in grp:
                             if self.Out[self.In.index(g1)] + self.Out[self.In.index(g2)] != self.Out[self.In.index(z)]:
-                                print str(self.Out[self.In.index(g1)])+" + "+str(self.Out[self.In.index(g2)])+" is not "+str(self.Out[self.In.index(z)])
+                                print(str(self.Out[self.In.index(g1)])+" + "+str(self.Out[self.In.index(g2)])+" is not "+str(self.Out[self.In.index(z)]))
                                 return "Homomorphism failed"
                         else:
                             summ = self.Out[self.In.index(g1)] + self.Out[self.In.index(g2)]
                             if not(summ in self.Target):
-                                print str(summ) + " is not in target."
+                                print(str(summ) + " is not in target.")
                                 return "Homomorphism failed"    
                             grp.append(z) 
                             self.In.append(z)
@@ -1846,7 +1855,7 @@ class FieldHomo:
                 for i in range(n):
                     OutList.append(self.Out[self.In.index(GenList[i])])
             except:
-                print "The mappings for all of the generators has not been defined."    
+                print("The mappings for all of the generators has not been defined.")    
                 return false 
             iList = [0 for i in DegreeList] # Generalized for loop
             Cont = true
@@ -1872,7 +1881,7 @@ class FieldHomo:
                 ele2 = GenList[i]
                 ele3 = GenList[i]^DegreeList[i]
                 if self(ele1) * self(ele2) != self(ele3):
-                    print "Inconsistent definition."
+                    print("Inconsistent definition.")
                     return false
             return true      
                           
@@ -2254,7 +2263,7 @@ class Basis:
         return None  
     def Coeff(self, value):
         if not(self._worked):
-            print "basis is not linearly independent"
+            print("basis is not linearly independent")
             return false
         dimen = self._n * self._m    
         w = Vectorize(value)
@@ -2529,10 +2538,10 @@ def ToPolycyclic():
     try:
         gap.eval("CurrentPCGroup := PcGroupFpGroup(CurrentGroup)")
     except:
-        print "Group definition doesn't meet all the polycyclic requirements."
+        print("Group definition doesn't meet all the polycyclic requirements.")
     else:
         gap.eval("AssignGeneratorVariables(CurrentPCGroup)")
-        print "Group converted to the Polycyclic format."
+        print("Group converted to the Polycyclic format.")
         tmpG = len(GeneratorList)
         CurrentGroup = gap("CurrentPCGroup")
         gap.eval(IdentityElement + ":= Identity(CurrentPCGroup);")
@@ -2591,9 +2600,9 @@ def StructureDescription(*args):
             gap.eval(gapstr)
             gapstr = gap.eval("StructureDescription(Perms)")      
     except:
-        print 'Error in finding the structure of the group.'
+        print('Error in finding the structure of the group.')
     else:
-        print GroupStringConvert(gapstr)  
+        print(GroupStringConvert(gapstr))  
         
 def GaloisType(poly):
     # This uses GAP to find the Galois group of the polynomial.  It assumes that the polynomial has been defined in QQ[x], for 
@@ -2604,7 +2613,7 @@ def GaloisType(poly):
     outstr = gap.eval("StructureDescription(TransitiveGroup(" + str(deg) + "," + nstr + "))")
     # Although TransitiveGroup gives more information than StructureDescription, students would not understand the notation produced by
     # the output of TransitiveGroup.  Thus, we find the StructureDescription to make it easier for the students.
-    print GroupStringConvert(outstr)     
+    print(GroupStringConvert(outstr))     
         
         
 def InitTerry():
@@ -2643,6 +2652,9 @@ def ListGroup():  # this will only be used for groups defined in GAP
     if str == 'infinity':
         return 'Group is infinite.'
     gap.eval("GList := ListGroup(CurrentGroup)")
+    str2 = gap.eval("Size(GList)")
+    if str2 != str:  # Apparently not every element has an alphabetical form, so just list the current group.
+        gap.eval("GList := List(CurrentGroup)")
     GList = gap('GList')
     return GroupSet(list(GList))
     
@@ -3006,18 +3018,18 @@ def GraphHomo(fun):
         if m == 1:
             x = 0.5
         else:
-            x =  1 - (numerical_approx(domnum)/(m-1))    
+            x =  1 - (N(domnum)/(m-1))    
         if n == 1:
             y = 0.5
         else:
-            y =  1 - (numerical_approx(rannum)/(n-1))    
+            y =  1 - (N(rannum)/(n-1))    
         graff += arrow((0,x), (1,y), color = ColorTable[4+rannum])
     if m == 1:
         graff += point((0, 0.5), rgbcolor = (0,0,0), size = 50)
         graff += text(Ldomain[0],(-0.02, 0.5), rgbcolor=(0,0,0), horizontal_alignment='right') 
     else:   
         for i in range(m):
-            y = 1 - (numerical_approx(i)/(m-1))
+            y = 1 - (N(i)/(m-1))
             graff += point((0, y), rgbcolor = (0,0,0), size = 50)
             graff += text(Ldomain[i],(-0.02, y), rgbcolor=(0,0,0), horizontal_alignment='right') 
     if n == 1:
@@ -3025,7 +3037,7 @@ def GraphHomo(fun):
         graff += text(Lrange[0],(1.02, 0.5), rgbcolor=(0,0,0), horizontal_alignment='left') 
     else:   
         for i in range(n):
-            y = 1 - (numerical_approx(i)/(n-1))
+            y = 1 - (N(i)/(n-1))
             graff+= point((1, y), rgbcolor = (0,0,0), size = 50)   
             graff += text(Lrange[i],(1.02, y), rgbcolor=(0,0,0), horizontal_alignment='left')   
     return graff.show(axes = false)       
@@ -3225,7 +3237,7 @@ def CheckRing():
     s = gap.eval("CheckRing(CurrentRing)")
     ss = str(s)
     ss = ss.replace('"','')
-    print ss
+    print(ss)
     return None
   
 def FindUnity(*args):
@@ -3233,7 +3245,7 @@ def FindUnity(*args):
         Rring = gap(CurrentRing) 
         ident = Rring.Identity()
         if str(ident) == 'fail':
-            print "No identity element found."
+            print("No identity element found.")
             return None
         return GapElement(ident)
     R_list = args[0]
@@ -3248,7 +3260,7 @@ def FindUnity(*args):
         Rring = Rset.Ring()
         ident = Rring.Identity()
         if str(ident) == 'fail':
-            print "No identity element found."
+            print("No identity element found.")
             return None
         return GapElement(ident)
     for i in R_ring._List:
@@ -3258,7 +3270,7 @@ def FindUnity(*args):
                 TestFlag = false
         if TestFlag:
             return i
-    print "No identity element found."
+    print("No identity element found.")
     return None         
 
 def Ring(*args):
@@ -3431,13 +3443,13 @@ def HomoDef(Fun, input, output):
         if isinstance(output, list):
             outputx = GroupSet(output)     
         elif not(inputx in Fun.Domain):
-            print "Second argument must be in the domain group." 
+            print("Second argument must be in the domain group.") 
         elif not(outputx in Fun.Target):
-            print "Last argument must be in the target group."
+            print("Last argument must be in the target group.")
         else:    
             Fun.Set(inputx, outputx)       
     else:
-        print "First argument must be a homomorphism."
+        print("First argument must be a homomorphism.")
         
 def FinishHomo(Fun):
     return Fun.Finish()   
@@ -3529,11 +3541,11 @@ def Signature(C_Cycle):
     else:
         return NotImplemented
         
-def Unfactorial(n):
+def Unfactorial(n_int):
     # returns the smallest number for which i! >= n
     index = 0
     Temp = 1
-    while Temp < n:
+    while Temp < n_int:
         index = index + 1
         Temp = Temp * index
     return index
@@ -3541,7 +3553,7 @@ def Unfactorial(n):
 def NthPerm(n_int):
    global Temp
    global digit
-   if n <= 0:
+   if n_int <= 0:
        return "Argument must be a positive integer"
    u = Unfactorial(n_int)
    Temp = range(u,0,-1) # goes from [u, u-1, u-2, ... , 1]
@@ -3812,13 +3824,13 @@ def ExpressAsWord(genList, target):
         tmpstr = tmpstr + ", " + str(permList[i])
     tmpstr = tmpstr + ")"
     gap.eval(tmpstr)
-    #print tmpstr
+    #print(tmpstr)
     tmpstr = 'phi := EpimorphismFromFreeGroup(Perms:names:=["' + genList[0] + '"'
     for i in range(1, len(genList)):
         tmpstr = tmpstr + ', "' + genList[i] + '"'
     tmpstr = tmpstr + "])"
     gap.eval(tmpstr)
-    #print tmpstr
+    #print(tmpstr)
     if isinstance(target, Perm):
         tar = PermToCycle(target)
     else:
@@ -3827,7 +3839,7 @@ def ExpressAsWord(genList, target):
     tar = tar^-1    
     tmpstr = "PreImagesRepresentative( phi," + str(tar) + ")"
     outstr = gap.eval(tmpstr)
-    #print tmpstr
+    #print(tmpstr)
     return outstr    
 
 def AddRingVar(str):
@@ -3933,23 +3945,23 @@ def Cyclotomic(n, str):
             
 def ToBasis(*args):
     if (len(args) == 0 or len(args) > 2):
-        print "One or two arguments are required"
+        print("One or two arguments are required")
         return None
     if len(args) == 1:
         B = Basis(args[0])
     else:
         B = Basis(args[0], args[1])
     if not (B._worked):
-        print "Error: linearly dependent."
+        print("Error: linearly dependent.")
         return false
     else:
-        print "Sucessful mapping constructed."
+        print("Sucessful mapping constructed.")
         return B    
  
 def Coefficients(Bas, value):
     if isinstance(Bas, Basis):
         return Bas.Coeff(value)
-    print "First argument must be a basis set by ToBasis."
+    print("First argument must be a basis set by ToBasis.")
     return false            
             
 def SimpleExtension(arg1, arg2):
@@ -3958,7 +3970,7 @@ def SimpleExtension(arg1, arg2):
     # we want to be consistent with the textbook, and return
     # arg1 + n*arg2 for the smallest positive n that works.
     if BaseCharacteristic > 0:
-        print "Algorithm does not work on finite fields."
+        print("Algorithm does not work on finite fields.")
         return false
     w = arg1 + arg2
     v = Vectorize(w)
