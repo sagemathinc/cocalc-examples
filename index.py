@@ -55,7 +55,7 @@ def resolve_references(meta, docs, prefix=''):
         for ref in meta['references']:
             prefix = os.path.join(prefix, os.path.dirname(ref))
             print("resolve_references prefix={}".format(prefix))
-            new_meta, *new_docs = yaml.load_all(open(ref))
+            new_meta, *new_docs = yaml.load_all(open(ref), Loader=yaml.SafeLoader)
             init_doc(new_docs, prefix)
             resolve_references(new_meta, new_docs, prefix=prefix)
             update_meta(meta, new_meta)
@@ -125,7 +125,7 @@ def export_json(meta, docs):
 
 
 def main(index_fn):
-    meta, *docs = yaml.load_all(open(index_fn))
+    meta, *docs = yaml.load_all(open(index_fn), Loader=yaml.SafeLoader)
     init_doc(docs, ROOT)
     resolve_references(meta, docs, prefix=ROOT)
     #debug(meta, docs)
