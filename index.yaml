@@ -427,3 +427,23 @@ description: |
   This repository contains the Jupyter Notebooks behind the O'Reilly report,
   [*A Whirlwind Tour of Python*](http://www.oreilly.com/programming/free/a-whirlwind-tour-of-python.csp)
   (free [100-page pdf](http://www.oreilly.com/programming/free/files/a-whirlwind-tour-of-python.pdf)).
+---
+id: practical-statistics-for-data-scientists
+src: practical-statistics-for-data-scientists/
+thumbnail: thumbs/practical-statistics-for-data-scientists.jpeg
+title: "Code for Practical Statistics for Data Scientists"
+website: "https://github.com/gedeck/practical-statistics-for-data-scientists"
+license: gpl3
+category: datascience
+tags:
+  - python
+description: |
+  This contains the code files for the book
+
+  **Practical Statistics for Data Scientists:**  50+ Essential Concepts Using R and Python
+
+  by Peter Bruce, Andrew Bruce, and Peter Gedeck
+
+  Publisher: O'Reilly Media; 2 edition (June 9, 2020)
+
+  Errata: http://oreilly.com/catalog/errata.csp?isbn=9781492072942

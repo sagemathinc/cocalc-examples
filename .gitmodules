@@ -79,3 +79,6 @@
 [submodule "WhirlwindTourOfPython"]
 	path = WhirlwindTourOfPython
 	url = https://github.com/jakevdp/WhirlwindTourOfPython.git
+[submodule "practical-statistics-for-data-scientists"]
+	path = practical-statistics-for-data-scientists
+	url = https://github.com/gedeck/practical-statistics-for-data-scientists.git
