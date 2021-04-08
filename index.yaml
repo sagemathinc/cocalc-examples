@@ -447,3 +447,19 @@ description: |
   Publisher: O'Reilly Media; 2 edition (June 9, 2020)
 
   Errata: http://oreilly.com/catalog/errata.csp?isbn=9781492072942
+---
+id: hub
+src: Hub/
+thumbnail: thumbs/hub_logo.png
+title: "Hub: access and manage datasets for PyTorch and TensorFlow"
+website: "https://github.com/activeloopai/Hub"
+license: Mozilla Public License, v. 2.0.
+category: datascience
+tags:
+  - datascience
+description: |
+The fastest way to access and manage datasets for PyTorch and TensorFlow
+
+Hub provides fast access to the state-of-the-art datasets for Deep Learning,
+enabling data scientists to manage them, 
+build scalable data pipelines and connect to Pytorch and Tensorflow
