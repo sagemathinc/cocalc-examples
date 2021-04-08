@@ -99,7 +99,7 @@ def consistency_checks(meta, docs):
         if 'tags' in doc:
             for t in doc['tags']:
                 id = doc['id']
-                assert t in tags, f'Tag {f} of document {id} not in meta.tags'
+                assert t in tags, f'Tag "{t}" of document "{id}" not in meta.tags'
         if 'thumbnail' in doc:
             assert os.path.exists(
                 doc['thumbnail']

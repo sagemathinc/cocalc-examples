@@ -21,6 +21,8 @@ tags:
     info: "Be patient. Starting Julia the first time might require to recompile some modules."
   finance:
     name: Finance
+  datascience:
+    name: Data science
 # an entry can have exactly one license
 licenses:
   a20: Apache 2.0
@@ -33,6 +35,7 @@ licenses:
   mit: MIT
   gpl3: GPLv3
   gfdl: GNU Free Documentation License
+  mpl2: Mozilla Public License, v. 2.0.
 # each entry must have exactly one category
 # weight: additional weighting for sorting by category – default 0
 categories:
@@ -449,17 +452,18 @@ description: |
   Errata: http://oreilly.com/catalog/errata.csp?isbn=9781492072942
 ---
 id: hub
-src: Hub/
+src: Hub/examples/
 thumbnail: thumbs/hub_logo.png
 title: "Hub: access and manage datasets for PyTorch and TensorFlow"
 website: "https://github.com/activeloopai/Hub"
-license: Mozilla Public License, v. 2.0.
+license: mpl2
 category: datascience
 tags:
   - datascience
+  - python
 description: |
-The fastest way to access and manage datasets for PyTorch and TensorFlow
+  The fastest way to access and manage datasets for PyTorch and TensorFlow
 
-Hub provides fast access to the state-of-the-art datasets for Deep Learning,
-enabling data scientists to manage them, 
-build scalable data pipelines and connect to Pytorch and Tensorflow
+  Hub provides fast access to the state-of-the-art datasets for Deep Learning,
+  enabling data scientists to manage them,
+  build scalable data pipelines and connect to Pytorch and Tensorflow
