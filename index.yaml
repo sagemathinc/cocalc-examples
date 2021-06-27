@@ -268,20 +268,20 @@ license: ccbysa
 description: |
   A book about the mathematics needed to use Sage efficiently, illustrated by concrete examples. The first part is accessible to high school and undergraduate students. The remainder is suited for graduate students, teachers, and researchers.
 website: http://sagebook.gforge.inria.fr/english.html
-#---
-#id: math157
-#src: math157/
-#category: math
-#tags:
-#  - sage
-#title: "Math 157: Intro to Mathematical Software"
-#author: "Kiran S. Kedlaya and William Stein"
-#thumbnail: thumbs/math157.png
-#license: ccbysa
-#description: |
-#  Course materials from *Math 157: Intro to Mathematical Software*, taught by Kiran Kedlaya at UC San Diego during the winter 2018 quarter.
-#  These were adapted from a similar course (Math 152) taught by Kedlaya at UCSD during winter 2017,
-#  and ultimately from several courses (Math 480) taught by William Stein at University of Washington.
+---
+id: math157
+src: math157/
+category: math
+tags:
+  - sage
+title: "Math 157: Intro to Mathematical Software"
+author: "Kiran S. Kedlaya and William Stein"
+thumbnail: thumbs/math157.png
+license: ccbysa
+description: |
+  Course materials from *Math 157: Intro to Mathematical Software*, taught by Kiran Kedlaya at UC San Diego during the winter 2018 quarter.
+  These were adapted from a similar course (Math 152) taught by Kedlaya at UCSD during winter 2017,
+  and ultimately from several courses (Math 480) taught by William Stein at University of Washington.
 ---
 id: think-complexity-2ed
 src: think-complexity-2ed/code/
@@ -377,17 +377,17 @@ description: |
   *This is the accompanying code for this book.*
 website: http://greenteapress.com/thinkos/
 license: ccbysa
-#---
-#id: scikit-image-tutorials
-#src: scikit-image-tutorials/
-#title: Scikit-Image Tutorials
-#category: datascience
-#thumbnail: thumbs/scikit-image.png
-#website: "https://github.com/scikit-image/skimage-tutorials"
-#preview: "https://share.cocalc.com/share/bf8bd3b9a338f447bf053411c13165e35d66b9a5/examples/scikit-image-tutorials/?viewer=share"
-#license: cc0
-#description: |
-#  A collection of tutorials for the scikit-image package.
+---
+id: scikit-image-tutorials
+src: scikit-image-tutorials/
+title: Scikit-Image Tutorials
+category: datascience
+thumbnail: thumbs/scikit-image.png
+website: "https://github.com/scikit-image/skimage-tutorials"
+preview: "https://share.cocalc.com/share/bf8bd3b9a338f447bf053411c13165e35d66b9a5/examples/scikit-image-tutorials/?viewer=share"
+license: cc0
+description: |
+  A collection of tutorials for the scikit-image package.
 #---
 #id: public-finance-2018-2019
 #src: public_finance_2018_2019/
