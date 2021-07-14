@@ -94,7 +94,7 @@ def consistency_checks(meta, docs):
             '/'
         ), f'doc "{title}" src must end with a slash to signal it is a directory. single files will be supported later ...'
         assert os.path.exists(os.path.join(
-            ROOT, doc['src'])), 'doc "{}" src path does not exist!'
+            ROOT, doc['src'])), 'doc "{}" src path does not exist!' + os.path.join(ROOT,doc['src'])
         assert doc['category'] in cats
         if 'tags' in doc:
             for t in doc['tags']:

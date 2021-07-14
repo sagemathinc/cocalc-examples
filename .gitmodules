@@ -70,9 +70,6 @@
 [submodule "math157"]
 	path = math157
 	url = https://github.com/kedlaya/math157
-[submodule "public_finance_2018_2019"]
-	path = public_finance_2018_2019
-	url = https://github.com/dgdi/public_finance_2018_2019.git
 [submodule "nbgrader-demo"]
 	path = nbgrader-demo
 	url = https://github.com/jhamrick/nbgrader-demo.git
@@ -85,3 +82,6 @@
 [submodule "Hub"]
 	path = Hub
 	url = https://github.com/activeloopai/Hub/
+[submodule "mew_cats"]
+	path = mew_cats
+	url = https://github.com/johnperry-math/mew_cats
