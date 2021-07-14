@@ -461,7 +461,7 @@ src: mew_cats/
 subdir: mew_cats/
 license: ccbysa
 thumbnail: mew_cats/graphics/mew_cats/mews_parabola_mouse.png
-category: intro
+category: math
 tags:
   - intro
   - math
