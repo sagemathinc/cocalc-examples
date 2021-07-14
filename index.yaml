@@ -65,31 +65,19 @@ categories:
     name: Finance
 references:
   - cocalc-example-files/index.yaml
-## DISABLED: software is in flux. However, the is/should be a custom software image for this
-#---
-#id: vqe-playground
-#title: "Variational Quantum Eigensolver Playground"
-#src: vqe-playground/
-#license: a20
-#thumbnail: thumbs/vqe-playground.png
-#category: physics
-#description: >
-#  Variational Quantum Eigensolver: gaining intuition about Variational Quantum Eigensolver.
-#  (based on [Quiskit](https://qiskit.org/), the "Quntum Information Science Kit")
-#website: "https://github.com/JavaFXpert/vqe-playground"
-#---
-#id: cocalc-first-steps
-#title: First Steps in CoCalc
-#src: first-steps/src/
-#subdir: first-steps
-#license: a20
-#thumbnail: thumbs/cocalc-first-steps.png
-#preview: "https://cocalc.com/share/db57295bb8c40e9b425cc9be4107cdfc39929c8c/examples/first-steps?viewer=share"
-#category: intro
-#tags:
-#  - intro
-#description: |
-#  Quick introduction to CoCalc interface and basic functionalities.
+---
+id: cocalc-first-steps
+title: First Steps in CoCalc
+src: first-steps/src/
+subdir: first-steps
+license: a20
+thumbnail: thumbs/cocalc-first-steps.png
+preview: "https://cocalc.com/share/db57295bb8c40e9b425cc9be4107cdfc39929c8c/examples/first-steps?viewer=share"
+category: intro
+tags:
+  - intro
+description: |
+  Quick introduction to CoCalc interface and basic functionalities.
 ---
 id: "bayes-for-hackers"
 title: "Bayesian Methods for Hackers"

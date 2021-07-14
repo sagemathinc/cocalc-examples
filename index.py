@@ -55,7 +55,8 @@ def resolve_references(meta, docs, prefix=''):
         for ref in meta['references']:
             prefix = os.path.join(prefix, os.path.dirname(ref))
             print("resolve_references prefix={}".format(prefix))
-            new_meta, *new_docs = yaml.load_all(open(ref), Loader=yaml.SafeLoader)
+            new_meta, *new_docs = yaml.load_all(open(ref),
+                                                Loader=yaml.SafeLoader)
             init_doc(new_docs, prefix)
             resolve_references(new_meta, new_docs, prefix=prefix)
             update_meta(meta, new_meta)
@@ -93,8 +94,9 @@ def consistency_checks(meta, docs):
         assert doc['src'].endswith(
             '/'
         ), f'doc "{title}" src must end with a slash to signal it is a directory. single files will be supported later ...'
-        assert os.path.exists(os.path.join(
-            ROOT, doc['src'])), 'doc "{}" src path does not exist!' + os.path.join(ROOT,doc['src'])
+        assert os.path.exists(
+            os.path.join(ROOT, doc['src'])
+        ), 'doc "{title}" src path "{doc["src"]}" does not exist!'
         assert doc['category'] in cats
         if 'tags' in doc:
             for t in doc['tags']:
