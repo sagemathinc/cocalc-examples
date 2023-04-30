@@ -25,9 +25,6 @@
 [submodule "beezer-linear-algebra"]
 	path = beezer-linear-algebra
 	url = https://github.com/rbeezer/sla.git
-[submodule "first-steps"]
-	path = first-steps
-	url = https://github.com/sagemathinc/cocalc-first-steps.git
 [submodule "cocalc-example-files"]
 	path = cocalc-example-files
 	url = https://github.com/sagemathinc/cocalc-example-files.git

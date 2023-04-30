@@ -66,19 +66,6 @@ categories:
 references:
   - cocalc-example-files/index.yaml
 ---
-id: cocalc-first-steps
-title: First Steps in CoCalc
-src: first-steps/src/
-subdir: first-steps
-license: a20
-thumbnail: thumbs/cocalc-first-steps.png
-preview: "https://cocalc.com/share/db57295bb8c40e9b425cc9be4107cdfc39929c8c/examples/first-steps?viewer=share"
-category: intro
-tags:
-  - intro
-description: |
-  Quick introduction to CoCalc interface and basic functionalities.
----
 id: "bayes-for-hackers"
 title: "Bayesian Methods for Hackers"
 src: bayesian-methods-for-hackers/
