@@ -139,12 +139,22 @@ thumbnail: thumbs/sage-lin-alg.png
 id: paulsen-abstract-algebra
 src: paulsen-abstract-algebra/
 category: math
-title: "Abstract Algebra: An Interactive Approach"
+title: "Abstract Algebra (2nd ed): An Interactive Approach"
 description: "Jupyter notebooks to accompany William Paulsen's [Abstract Algebra: An Interactive Approach, Second Edition](https://www.crcpress.com/Abstract-Algebra-An-Interactive-Approach-Second-Edition/Paulsen/p/book/9781498719766)."
 website: https://www.crcpress.com/Abstract-Algebra-An-Interactive-Approach-Second-Edition/Paulsen/p/book/9781498719766
 author: "William Paulsen"
 license: asis
 thumbnail: thumbs/aa-paulsen.png
+---
+id: paulsen-abstract-algebra-3
+src: paulsen-abstract-algebra-3/
+category: math
+title: "Abstract Algebra (3rd ed): An Interactive Approach"
+description: "Jupyter notebooks to accompany William Paulsen's [Abstract Algebra: An Interactive Approach, Third Edition](https://www.routledge.com/Abstract-Algebra-An-Interactive-Approach/Paulsen/p/book/9781032985404)."
+website: https://www.routledge.com/Abstract-Algebra-An-Interactive-Approach/Paulsen/p/book/9781032985404
+author: "William Paulsen"
+license: asis
+thumbnail: thumbs/paulsen-alg-3rd-ed.jpg
 ---
 id: ml-with-python
 src: introduction_to_ml_with_python/
