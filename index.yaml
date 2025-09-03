@@ -23,6 +23,8 @@ tags:
     name: Finance
   datascience:
     name: Data science
+  ai:
+    name: Artificial Intelligence
 # an entry can have exactly one license
 licenses:
   a20: Apache 2.0
@@ -463,3 +465,21 @@ tags:
   - intro
   - math
 author: John Harris, Karen Kohl, and John Perry
+---
+id: arcknow-learning-ai
+src: arcknow-labs/
+title: Arcknow - Learning Platform for AI Science and Data Science
+description: |
+  Arcknow offers advanced training for AI Science and Data Science professionals, 
+  combining cutting-edge content synthesized 
+  from the latest research publications with an 
+  engaging, hands-on learning experience.
+website: https://arcknow.com
+category: cs
+tags:
+  - python
+  - datascience
+  - ai
+license: apache-2.0
+thumbnail: arcknow-labs/thumb.png
+
