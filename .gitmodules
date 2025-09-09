@@ -82,3 +82,6 @@
 [submodule "mew_cats"]
 	path = mew_cats
 	url = https://github.com/johnperry-math/mew_cats
+[submodule "arcknow-labs"]
+	path = arcknow-labs
+	url = https://github.com/arcknow/arcknow-labs
